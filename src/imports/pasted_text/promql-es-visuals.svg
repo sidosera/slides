@@ -1,0 +1,688 @@
+Design a complete set of technical visualizations for an Elastic engineering blog post about implementing PromQL natively in Elasticsearch.
+
+The audience is senior/staff engineers working on databases, distributed systems, query engines, observability, and metrics. The visuals should feel like engineering diagrams from a technical design doc that have been polished for publication — not marketing illustrations.
+
+SOURCE / BRAND REFERENCE
+
+Use the Elastic Brand Guidelines already available in this Figma file.
+
+The blog has a WHITE theme.
+
+Use:
+- White as the main canvas/background.
+- Ink / Dark Ink for primary text and structural lines.
+- Light Grey / Medium Grey for secondary containers, boundaries, inactive paths, grids.
+- Elastic Blue as the primary technical/accent color.
+- Teal, Poppy, Pink, Yellow, Light Blue / Sky Blue as secondary semantic colors.
+- Darker variants only where additional contrast or hierarchy is required.
+
+Do NOT invent a new color palette. Use existing Elastic Figma color styles/tokens.
+
+The diagrams should remain highly readable when embedded in a white blog page at roughly 700–1000 px width.
+
+GENERAL VISUAL LANGUAGE
+
+Create one shared visual system and reuse it across every figure.
+
+Style:
+- minimalist
+- technical
+- flat
+- precise
+- architectural
+- lots of white space
+- thin lines
+- restrained use of color
+- no gradients unless an existing Elastic brand style explicitly calls for them
+- no 3D
+- no isometric servers
+- no cloud clip-art
+- no generic “AI” graphics
+- no decorative blobs
+- no fake dashboards
+- no unnecessary icons
+
+Think:
+query planner diagram + compiler diagram + distributed systems paper + Elastic brand.
+
+Boxes:
+- subtle 1 px borders
+- small radius, approximately 6–8 px
+- mostly white fill
+- selected/highlighted operators may use a very light tint of their semantic color
+
+Typography:
+- use Elastic's existing typography styles
+- titles short and strong
+- labels small but readable
+- code/query text in an appropriate monospace style
+- avoid paragraph-sized text inside diagrams
+
+Arrows:
+- simple directional arrows
+- use line thickness and color sparingly to indicate important data flow
+- distinguish logical-plan transformations from physical/network movement where useful
+
+CONSISTENCY
+
+Create reusable Figma components for:
+- query/operator node
+- plan node
+- API endpoint
+- time-series block
+- cluster/data node
+- coordinator
+- arrow / exchange
+- label set
+- code/query chip
+- annotation / callout
+- unsupported/future feature marker
+
+Every figure should look like part of the same article.
+
+Do not put a huge title inside each diagram. Each visual should have a small figure title/subtitle that can optionally be removed when the image is embedded below an article heading.
+
+Create all diagrams as vector layers, fully editable.
+
+==================================================
+FIGURE 1 — HERO / ARTICLE COVER
+==================================================
+
+Concept: “PromQL becomes a frontend to Elasticsearch.”
+
+This should be the cover image for the article.
+
+Show a PromQL query entering from the left:
+
+rate(http_requests_total[5m])
+
+Then visually move through:
+
+PromQL
+→ parser / planner
+→ Elasticsearch distributed compute engine
+→ time-series data
+
+The strongest visual idea should be that PromQL is NOT a separate engine bolted onto Elasticsearch. It becomes another language frontend over the same execution machinery.
+
+Optionally show ES|QL joining from another branch into the same execution engine:
+
+        ES|QL
+           \
+            → Elasticsearch compute engine
+           /
+      PromQL
+
+Keep it abstract and elegant rather than detailed.
+
+Use Elastic Blue for the main execution path, with perhaps Teal for PromQL and a secondary Elastic color for ES|QL.
+
+Landscape approximately 1600×900.
+
+==================================================
+FIGURE 2 — PROMQL COMPILATION / EXECUTION PIPELINE
+==================================================
+
+A clean compiler-style vertical or horizontal architecture diagram:
+
+Prometheus HTTP API
+        ↓
+     PromQL
+        ↓
+   Parser / AST
+        ↓
+PromQL logical plan
+        ↓
+Lowering + optimization
+        ↓
+Elasticsearch physical plan
+        ↓
+Distributed compute
+        ↓
+Prometheus response adapter
+
+Visually distinguish:
+
+LANGUAGE / SEMANTICS
+from
+SHARED ELASTICSEARCH ENGINE
+
+For example, place the upper PromQL-specific nodes inside a subtle Teal-tinted boundary and the lower shared engine nodes inside a subtle Elastic Blue boundary.
+
+The important conceptual message:
+PromQL keeps Prometheus semantics through planning, then progressively lowers into shared Elasticsearch machinery.
+
+==================================================
+FIGURE 3 — WHY RATE() IS NOT JUST AN AGGREGATION
+==================================================
+
+Visualize this query:
+
+sum by (service) (
+  rate(http_requests_total[5m])
+)
+
+Compare a naive relational interpretation with the actual time-series execution.
+
+LEFT, small / de-emphasized:
+
+scan
+→ group
+→ aggregate
+
+Mark this as incorrect / insufficient.
+
+RIGHT, main diagram:
+
+scan samples
+→ partition by time series
+→ construct 5m windows
+→ order samples by timestamp
+→ detect counter resets
+→ compute rate per series
+→ align evaluation timestamps
+→ aggregate by service
+
+Show 2–3 tiny input series with sample dots, including one counter reset.
+
+Make the reset visually obvious:
+e.g. 95 → 103 → 4 → 11
+
+Then show how rate operates before cross-series aggregation.
+
+This should communicate why PromQL requires time-series-specific execution semantics.
+
+==================================================
+FIGURE 4 — QUERY_RANGE AND TIMESERIES COLLAPSE
+==================================================
+
+Title concept:
+“One series, many execution rows”
+
+Show the mismatch between Elasticsearch execution output and Prometheus query_range output.
+
+LEFT:
+Compute-engine rows
+
+series_a | 10:00 | 42
+series_a | 10:01 | 43
+series_a | 10:02 | 41
+series_b | 10:00 | 12
+series_b | 10:01 | 14
+
+CENTER:
+TimeSeriesCollapse operator
+
+RIGHT:
+Prometheus matrix representation
+
+series_a
+[(10:00,42), (10:01,43), (10:02,41)]
+
+series_b
+[(10:00,12), (10:01,14)]
+
+Represent each series consistently with a different Elastic secondary color.
+
+Make TimeSeriesCollapse look like a real execution-engine operator, not a magical transformation.
+
+Add a small annotation:
+“collapse values onto the requested evaluation-step grid”
+
+The core point:
+API semantics exposed a missing execution primitive, so the primitive was added to the shared compute engine.
+
+==================================================
+FIGURE 5 — BINARY PROMQL EXPRESSIONS ARE JOINS
+==================================================
+
+Use:
+
+rate(http_errors_total[5m])
+/
+rate(http_requests_total[5m])
+
+Architecture:
+
+                    /
+              binary '/'
+              /        \
+             /          \
+    errors branch     requests branch
+         |                 |
+       rate()             rate()
+         |                 |
+   series set A       series set B
+             \          /
+              \        /
+             SERIES MATCH
+                  |
+              arithmetic
+                  |
+              result series
+
+Make SERIES MATCH visually look closer to a distributed hash join than scalar arithmetic.
+
+Below it, show example labels:
+
+LEFT:
+{cluster="a", instance="1"}
+{cluster="a", instance="2"}
+{cluster="b", instance="1"}
+
+RIGHT:
+{cluster="a"}
+{cluster="b"}
+
+Then show the effect of:
+
+on(cluster)
+group_left
+
+Do not try to explain every PromQL matching rule. The diagram should communicate that matching keys + cardinality are part of binary-expression semantics.
+
+==================================================
+FIGURE 6 — SELECTOR LOCALITY / OPTIMIZER BUG
+==================================================
+
+This should feel like an engineering debugging diagram.
+
+Query:
+
+sum by (cluster) (errors{service="foo"})
+/
+sum by (cluster) (requests{service="bar"})
+
+Show WRONG lowering:
+
+             global filter
+ service="foo" AND service="bar"
+                  |
+              EmptyRelation
+
+Make this side grey / Poppy-accented.
+
+Then show CORRECT lowering:
+
+             binary /
+             /      \
+            /        \
+service="foo"      service="bar"
+     |                  |
+ errors branch      requests branch
+
+Each selector remains attached to its operand.
+
+Add short annotation:
+
+“PromQL operands are independent expressions.
+Selector predicates must remain branch-local.”
+
+This is a good figure to make the blog feel like an engineering story rather than a product announcement.
+
+==================================================
+FIGURE 7 — THE PROMETHEUS COMPATIBILITY SURFACE
+==================================================
+
+Illustrate that supporting PromQL alone is not enough.
+
+Center:
+Elasticsearch Prometheus compatibility layer
+
+Around it, show requests from Grafana / Prometheus tooling:
+
+Query:
+- /api/v1/query
+- /api/v1/query_range
+
+Discovery:
+- /api/v1/labels
+- /api/v1/series
+- /api/v1/metadata
+
+Capabilities:
+- /api/v1/status/buildinfo
+
+Transport:
+- GET
+- POST application/x-www-form-urlencoded
+
+Ingest:
+- Prometheus Remote Write
+
+Use a radial or structured architecture layout.
+
+Do NOT make this look like a product feature checklist.
+
+The visual idea:
+“the compatibility boundary is an ecosystem/protocol surface, not just a parser.”
+
+==================================================
+FIGURE 8 — REAL-WORLD PROMQL COMPATIBILITY
+==================================================
+
+Create a restrained engineering chart showing the change from tech preview to GA.
+
+Tech Preview → GA
+approximately +20 percentage points
+up to ~80% of real-world Grafana query corpus
+
+Do not create a marketing-style giant “80%” number.
+
+Instead visualize something like:
+
+100 normalized query shapes
+
+Tech preview:
+████████████████................
+
+GA:
+████████████████████████........
+
+Or a clean horizontal coverage progression.
+
+Next to the chart show the methodology as a small pipeline:
+
+Public Grafana dashboards
+→ extract PromQL
+→ normalize queries
+→ run against Elasticsearch
+→ compare with reference Prometheus
+→ compatibility corpus
+
+The methodology should be at least as visually important as the percentage.
+
+==================================================
+FIGURE 9 — NATIVE HISTOGRAM LOWERING
+==================================================
+
+Show that classic and native histograms require different execution shapes.
+
+TOP / CLASSIC HISTOGRAM:
+
+bucket series:
+le="0.1"
+le="0.5"
+le="1"
+le="+Inf"
+
+        ↓
+
+histogram_quantile()
+
+        ↓
+
+quantile value
+
+BOTTOM / NATIVE / EXPONENTIAL HISTOGRAM:
+
+one exponential_histogram value
+with bucket structure inside a single value
+
+        ↓
+
+PromQL histogram_quantile
+
+        ↓
+
+Elasticsearch histogram execution
+
+        ↓
+
+quantile value
+
+Show that for native histograms, “histogram is a value,” whereas classic histograms are represented as multiple bucket series.
+
+Add a tiny annotation:
+
+q = 0 → min
+q = 1 → max
+other q → histogram percentile execution
+
+Keep this technical, not illustrative.
+
+==================================================
+FIGURE 10 — OFFSET CHANGES SELECTOR EVALUATION
+==================================================
+
+Use:
+
+rate(http_requests_total[5m] offset 1h)
+
+Create a simple timeline.
+
+Current evaluation timestamp:
+T
+
+Normal selector window:
+[T - 5m, T]
+
+With offset 1h:
+[T - 1h - 5m, T - 1h]
+
+Show the evaluation timestamp moving at the selector level.
+
+Explicitly communicate:
+“offset does not shift the final output; it shifts selector evaluation.”
+
+Use two parallel timeline rows.
+
+==================================================
+FIGURE 11 — VECTOR MATCHING AS THE BIG REMAINING GAP
+==================================================
+
+This should visually extend Figure 5.
+
+Show two independently distributed branches:
+
+LEFT BRANCH
+shard 1
+shard 2
+shard 3
+
+RIGHT BRANCH
+shard 1
+shard 2
+shard 3
+
+Both produce series partitions.
+
+Then show an exchange / shuffle keyed by matching labels:
+
+matching key:
+(cluster, namespace)
+
+Then:
+
+distributed series match
+
+Then:
+- enforce one-to-one
+- or many-to-one / one-to-many
+- reconstruct output labels
+- arithmetic
+
+Use small callouts for:
+
+on(...)
+ignoring(...)
+group_left(...)
+group_right(...)
+
+The main visual question should be:
+
+“Where does matching happen in a distributed query plan?”
+
+This diagram should look like a distributed database execution plan, not a Prometheus tutorial.
+
+==================================================
+FIGURE 12 — MEMORY OPTIMIZATION: PACK BEFORE EXCHANGE
+==================================================
+
+Create a side-by-side physical-plan diagram.
+
+BEFORE
+
+DATA NODES
+
+TS
+↓
+partial stats
+↓
+read dimensions
+↓
+NETWORK EXCHANGE
+
+COORDINATOR
+
+final stats
+↓
+pack dimensions
+
+
+AFTER
+
+DATA NODES
+
+TS
+↓
+partial stats
+↓
+read dimensions
+↓
+pack dimensions
+↓
+NETWORK EXCHANGE
+
+COORDINATOR
+
+final stats
+
+Highlight the network boundary clearly.
+
+Next to BEFORE show multiple vectors moving over the network:
+
+cluster vector
+namespace vector
+pod vector
+container vector
+...
+
+Next to AFTER show:
+
+packed dimension key
++
+series ordinal / dictionary
+
+The “after” path should visually contain fewer objects crossing the exchange.
+
+Add concise annotation:
+
+“compress cardinality-related state before the network exchange”
+
+Optional second callout:
+
+“less coordinator state”
+
+This should be one of the deepest engineering visuals in the article.
+
+==================================================
+FIGURE 13 — SHARED ENGINE END STATE
+==================================================
+
+Closing architecture visual.
+
+Show:
+
+          ES|QL            PromQL
+             \              /
+              \            /
+               logical plans
+                    ↓
+               optimization
+                    ↓
+             distributed compute
+                    ↓
+        columnar/vectorized operators
+                    ↓
+          Elasticsearch storage
+
+Around the shared engine, optionally show generic capabilities that both languages inherit:
+
+- memory accounting
+- exchanges
+- aggregations
+- circuit breakers
+- vectorized execution
+
+The visual conclusion should be:
+
+“PromQL is a language frontend with Prometheus semantics, not a second execution stack.”
+
+This should visually echo the hero figure, but with more detail.
+
+==================================================
+DELIVERABLES
+==================================================
+
+Create:
+
+1. One Figma page named:
+   “PromQL GA Blog Visuals”
+
+2. A top-level section:
+   “Components”
+   containing all reusable diagram components.
+
+3. One clearly named frame for each figure:
+   01 Hero
+   02 PromQL Compilation
+   03 Rate Execution
+   04 TimeSeriesCollapse
+   05 Binary Expressions
+   06 Selector Locality
+   07 Prometheus API Surface
+   08 Compatibility Corpus
+   09 Native Histograms
+   10 Offset Semantics
+   11 Distributed Vector Matching
+   12 Pack Before Exchange
+   13 Shared Engine
+
+4. Default blog figure width:
+   1200 px
+
+5. Hero:
+   1600 × 900
+
+6. Standard diagrams:
+   approximately 1200 × 650–800, adjusted to content.
+
+7. Ensure all important text remains legible if exported at ~800 px width.
+
+8. All figures must work on pure white without requiring a colored surrounding container.
+
+9. Keep labels concise enough that diagrams are understandable in 5–15 seconds, while still rewarding engineers who inspect them closely.
+
+10. Use Auto Layout where appropriate and make the underlying layers clean enough that an engineer can edit queries, operator names, labels, and plan structure later.
+
+FINAL QUALITY BAR
+
+The result should look like visuals from a post written by engineers who actually built a query engine.
+
+Avoid anything that could be mistaken for:
+- a sales deck
+- a product-launch infographic
+- generic observability marketing
+- a cloud architecture template
+
+Favor:
+- operator trees
+- timelines
+- execution plans
+- data representation
+- network boundaries
+- cardinality
+- transformations
+- concrete PromQL examples
+- subtle annotations explaining why the implementation is hard

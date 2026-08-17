@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Elastic brand palette */
+  --color-sky: #45a8ff;
+  --color-light-blue: #1893ff;
+  --color-elastic-blue: #0b64dd;
+  --color-dark-blue: #0a52b3;
+
+  --color-light-teal: #48efcf;
+  --color-teal: #02bcb7;
+  --color-dark-teal: #128d91;
+
+  --color-light-poppy: #ff957d;
+  --color-poppy: #fa744e;
+  --color-dark-poppy: #e55940;
+
+  --color-light-pink: #f990c6;
+  --color-pink: #f04e98;
+
+  --color-yellow: #fec514;
+  --color-light-yellow: #ffdf56;
+
+  --color-midnight: #15338b;
+  --color-dev-blue: #101c3f;
+
+  --color-light-gray: #f5f7fa;
+  --color-medium-gray: #dce2ea;
+  --color-dark-gray: #abb4c4;
+
+  --color-ink: #343741;
+  --color-dark-ink: #1c1e23;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Hide scrollbars until scrolling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: var(--color-medium-gray) transparent;
+}
