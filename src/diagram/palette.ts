@@ -30,7 +30,7 @@ export const C = {
 
   ink: "#343741",
   darkInk: "#1c1e23",
-} as const;
+} as const
 
 // Very light semantic tints for highlighted nodes.
 export const TINT = {
@@ -38,8 +38,8 @@ export const TINT = {
   semantic: "rgba(2,188,183,0.08)", // Teal
   error: "rgba(250,116,78,0.07)", // Poppy
   muted: C.lightGray,
-} as const;
+} as const
 
-export const FONT_SANS = "'Inter', ui-sans-serif, system-ui, sans-serif";
+export const FONT_SANS = "'Inter', ui-sans-serif, system-ui, sans-serif"
 export const FONT_MONO =
-  "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace";
+  "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace"

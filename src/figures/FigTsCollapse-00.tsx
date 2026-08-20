@@ -7,7 +7,7 @@ import { C } from "../diagram/palette"
 const A = C.elasticBlue
 const B = C.pink
 
-function Panel({ x, y, w, h }: { x: number y: number w: number h: number }) {
+function Panel({ x, y, w, h }: { x: number; y: number; w: number; h: number }) {
   return (
     <rect
       x={x}

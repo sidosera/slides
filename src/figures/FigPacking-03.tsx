@@ -1,6 +1,14 @@
-import { Figure } from "../diagram/Figure";
-import { Node, Arrow, ExchangeBoundary, Annotation, GroupLabel, Label, Edge } from "../diagram/grammar";
-import { C, TINT } from "../diagram/palette";
+import { Figure } from "../diagram/Figure"
+import {
+  Node,
+  Arrow,
+  ExchangeBoundary,
+  Annotation,
+  GroupLabel,
+  Label,
+  Edge,
+} from "../diagram/grammar"
+import { C, TINT } from "../diagram/palette"
 
 // FIGURE 12 — Pack label dimensions before the exchange.
 // BEFORE: raw label column vectors (including step) all cross the network;
@@ -10,7 +18,7 @@ import { C, TINT } from "../diagram/palette";
 //         is kept as the outer LongHash key — not packed); one compact
 //         hierarchical partial state crosses the wire; coordinator only merges.
 
-const NW = 180;
+const NW = 180
 
 function Col({
   cx,
@@ -21,43 +29,51 @@ function Col({
   crossing,
   lower,
 }: {
-  cx: number;
-  title: string;
-  upper: string[];
-  packIndex: number;
-  netY: number;
-  crossing: { thick: boolean; labels: string[] };
-  lower: string[];
+  cx: number
+  title: string
+  upper: string[]
+  packIndex: number
+  netY: number
+  crossing: { thick: boolean labels: string[] }
+  lower: string[]
 }) {
-  const x = cx - NW / 2;
-  const h = 30;
-  const step = 42;
-  const top = 84;
+  const x = cx - NW / 2
+  const h = 30
+  const step = 42
+  const top = 84
 
   // y of first lower node
-  const firstLowerY = netY + 24 + crossing.labels.length * 18 + 26;
+  const firstLowerY = netY + 24 + crossing.labels.length * 18 + 26
   // bottom of crossing-label zone (midpoint for incoming arrow)
-  const crossingMidY = netY + 14 + (crossing.labels.length * 18) / 2;
+  const crossingMidY = netY + 14 + (crossing.labels.length * 18) / 2
 
   return (
     <g>
-      <Label x={cx} y={56} color={C.darkInk} size={13} weight={700}>
+      <Label x={cx} y={40} color={C.darkInk} size={13} weight={700}>
         {title}
       </Label>
 
       {/* DATA NODE */}
-      <GroupLabel x={x} y={top - 12} color={C.darkGray}>DATA NODE</GroupLabel>
+      <GroupLabel x={x} y={top - 12} color={C.darkGray}>
+        DATA NODE
+      </GroupLabel>
       {upper.map((l, i) => {
-        const y = top + i * step;
-        const variant = i === packIndex ? "physical" : "neutral";
+        const y = top + i * step
+        const variant = i === packIndex ? "physical" : "neutral"
         return (
           <g key={l}>
             <Node x={x} y={y} w={NW} h={h} label={l} variant={variant} />
             {i < upper.length - 1 && (
-              <Arrow x1={cx} y1={y + h} x2={cx} y2={y + step} variant="logical" />
+              <Arrow
+                x1={cx}
+                y1={y + h}
+                x2={cx}
+                y2={y + step}
+                variant="logical"
+              />
             )}
           </g>
-        );
+        )
       })}
 
       {/* arrow / edges from last data-node op down to network boundary */}
@@ -120,20 +136,28 @@ function Col({
       )}
 
       {/* COORDINATOR */}
-      <GroupLabel x={x} y={firstLowerY - 14} color={C.darkGray}>COORDINATOR</GroupLabel>
+      <GroupLabel x={x} y={firstLowerY - 14} color={C.darkGray}>
+        COORDINATOR
+      </GroupLabel>
       {lower.map((l, i) => {
-        const y = firstLowerY + i * step;
+        const y = firstLowerY + i * step
         return (
           <g key={l}>
             {i > 0 && (
-              <Arrow x1={cx} y1={y - step + h} x2={cx} y2={y} variant="logical" />
+              <Arrow
+                x1={cx}
+                y1={y - step + h}
+                x2={cx}
+                y2={y}
+                variant="logical"
+              />
             )}
             <Node x={x} y={y} w={NW} h={h} label={l} variant="neutral" />
           </g>
-        );
+        )
       })}
     </g>
-  );
+  )
 }
 
 export function Figure12Pack() {
@@ -146,7 +170,15 @@ export function Figure12Pack() {
       height={600}
     >
       {/* centre divider */}
-      <Edge x1={490} y1={48} x2={490} y2={570} color={C.mediumGray} width={1} dashed />
+      <Edge
+        x1={490}
+        y1={48}
+        x2={490}
+        y2={570}
+        color={C.mediumGray}
+        width={1}
+        dashed
+      />
 
       {/* ── BEFORE ── */}
       <Col
@@ -178,16 +210,33 @@ export function Figure12Pack() {
         netY={282}
         crossing={{
           thick: true,
-          labels: ["step  →  { packed label key", "               + partial state }"],
+          labels: [
+            "step  →  { packed label key",
+            "               + partial state }",
+          ],
         }}
         lower={["merge hierarchical states", "final stats"]}
       />
 
       {/* pack label dims annotation */}
-      <rect x={728 - NW / 2 - 2} y={84 + 3 * 42 - 2} width={NW + 4} height={34}
-        rx={9} fill="none" stroke={C.elasticBlue} strokeWidth={0} />
-      <text x={728} y={84 + 3 * 42 + 30 + 14}
-        textAnchor="middle" fontSize={9.5} fontStyle="italic" fill={C.darkBlue}>
+      <rect
+        x={728 - NW / 2 - 2}
+        y={84 + 3 * 42 - 2}
+        width={NW + 4}
+        height={34}
+        rx={9}
+        fill="none"
+        stroke={C.elasticBlue}
+        strokeWidth={0}
+      />
+      <text
+        x={728}
+        y={84 + 3 * 42 + 30 + 14}
+        textAnchor="middle"
+        fontSize={9.5}
+        fontStyle="italic"
+        fill={C.darkBlue}
+      >
         step = outer key · labels packed into inner key
       </text>
 
@@ -198,5 +247,5 @@ export function Figure12Pack() {
         one hierarchical partial state · step bytes stay outer
       </Annotation>
     </Figure>
-  );
+  )
 }
