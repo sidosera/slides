@@ -1,5 +1,5 @@
-import { Figure } from "../../share"
-import { C, TINT, FONT_MONO } from "../../share"
+import { Figure } from "../share"
+import { C, TINT, FONT_MONO } from "../share"
 
 // FIGURE 13b — Columnar representation: tabular concept → dense column arrays.
 // Layout: row table on top, per-column down-arrows, column blocks directly below.
@@ -162,7 +162,6 @@ export function Figure13bColumnar() {
         y={TBL_TOP}
         width={TOTAL_W}
         height={TBL_H}
-        rx={6}
         fill="rgba(255,255,255,0.86)"
         stroke={PANEL_STROKE}
         strokeWidth={0.85}
@@ -171,7 +170,7 @@ export function Figure13bColumnar() {
       {/* clip header fills to the table's rounded border */}
       <defs>
         <clipPath id="tbl-hdr-clip">
-          <rect x={X0} y={TBL_TOP} width={TOTAL_W} height={TBL_HDR} rx={6} />
+          <rect x={X0} y={TBL_TOP} width={TOTAL_W} height={TBL_HDR} />
         </clipPath>
       </defs>
 
@@ -316,7 +315,6 @@ export function Figure13bColumnar() {
               fill="none"
               stroke="rgba(250,116,78,0.72)"
               strokeWidth={0.9}
-              rx={2}
             />
           </g>
         )
@@ -365,7 +363,6 @@ export function Figure13bColumnar() {
               y={BLK_TOP}
               width={COL_WIDTHS[ci]}
               height={BLK_HDR}
-              rx={6}
               fill={col.fill}
               stroke="none"
             />
@@ -376,7 +373,6 @@ export function Figure13bColumnar() {
               y={BLK_TOP}
               width={COL_WIDTHS[ci]}
               height={30}
-              rx={6}
               fill="none"
               stroke={col.stroke}
               strokeWidth={1.25}
@@ -388,7 +384,6 @@ export function Figure13bColumnar() {
               y={BLK_TOP}
               width={col.hitW}
               height={30}
-              rx={2}
               fill="rgba(250,116,78,0.11)"
               stroke="rgba(250,116,78,0.68)"
               strokeWidth={0.75}
@@ -517,7 +512,6 @@ export function Figure13bColumnar() {
               y={NUM_PANEL_Y}
               width={NUM_PANEL_W}
               height={PANEL_H}
-              rx={8}
               fill={CONTEXT_FILL}
               stroke={CONTEXT_STROKE}
               strokeWidth={0.8}
@@ -527,7 +521,6 @@ export function Figure13bColumnar() {
               y={ORD_PANEL_Y}
               width={ORD_PANEL_W}
               height={PANEL_H}
-              rx={8}
               fill={CONTEXT_FILL}
               stroke={CONTEXT_STROKE}
               strokeWidth={0.8}
@@ -664,7 +657,6 @@ export function Figure13bColumnar() {
                   y={RAW_Y}
                   width={DC_W}
                   height={DC_H}
-                  rx={3}
                   fill="rgba(255,255,255,0.88)"
                   stroke={PANEL_STROKE}
                   strokeWidth={0.65}
@@ -758,7 +750,6 @@ export function Figure13bColumnar() {
                   y={DELTA_Y}
                   width={DC_W}
                   height={DC_H}
-                  rx={3}
               fill={TINT.semantic}
               stroke={C.teal}
                   strokeWidth={0.7}
@@ -824,7 +815,6 @@ export function Figure13bColumnar() {
               y={O_TOP}
               width={STR_W}
               height={O_BLOCK_H}
-              rx={4}
               strokeWidth={0.75}
               strokeDasharray="2 3"
               opacity={0.02}
@@ -901,7 +891,6 @@ export function Figure13bColumnar() {
               y={O_TOP}
               width={ORD_W}
               height={O_BLOCK_H}
-              rx={4}
               fill={TINT.semantic}
               stroke={C.teal}
               strokeWidth={0.9}
@@ -958,8 +947,7 @@ export function Figure13bColumnar() {
               fontFamily={FONT_MONO} fontSize={7} fontWeight={600} letterSpacing={0.8} fill={C.darkGray}>
               DICTIONARY
             </text>
-            <rect x={DICT_X2} y={DICT_TOP_Y} width={DICT_W2} height={DICT_H2}
-              rx={4} fill="white" stroke={C.mediumGray} strokeWidth={1} />
+            <rect x={DICT_X2} y={DICT_TOP_Y} width={DICT_W2} height={DICT_H2} fill="white" stroke={C.mediumGray} strokeWidth={1} />
             {TERMS.map((term, ti) => {
               const ty = DICT_TOP_Y + ti * DICT_EH
               return (

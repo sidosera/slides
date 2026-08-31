@@ -13,6 +13,7 @@ function safeFilename(value: string) {
 // subtitle) above a self-contained, white, export-ready SVG canvas.
 export function Figure({
   number,
+  showNumber = true,
   title,
   subtitle,
   width,
@@ -20,6 +21,7 @@ export function Figure({
   children,
 }: {
   number: string
+  showNumber?: boolean
   title: string
   subtitle?: string
   width: number
@@ -31,9 +33,11 @@ export function Figure({
   return (
     <figure className="w-full">
       <figcaption className="mb-4">
-        <span className="font-mono text-[11px] font-medium tracking-widest text-dark-gray">
-          FIGURE {number}
-        </span>
+        {showNumber && (
+          <span className="font-mono text-[11px] font-medium tracking-widest text-dark-gray">
+            FIGURE {number}
+          </span>
+        )}
         <h3 className="mt-1 text-[19px] font-semibold leading-snug text-dark-ink">
           {title}
         </h3>

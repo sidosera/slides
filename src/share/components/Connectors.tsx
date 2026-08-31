@@ -102,7 +102,6 @@ export function ExchangeBoundary({
         y={y - 11}
         width={lw}
         height={22}
-        rx={11}
         fill={C.white}
         stroke={C.blue}
         strokeWidth={1.2}

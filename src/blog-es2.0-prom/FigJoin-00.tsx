@@ -1,6 +1,6 @@
-import { Figure } from "../../share"
-import { Node, Arrow, Chip, Annotation, GroupLabel, Label } from "../../share"
-import { C } from "../../share"
+import { Figure } from "../share"
+import { Node, Arrow, Chip, Annotation, GroupLabel, Label } from "../share"
+import { C } from "../share"
 
 // FIGURE 05 — Binary arithmetic becomes a join (major).
 // The emphasis is SERIES MATCH (a distributed hash join), not the "/".
@@ -60,7 +60,6 @@ export function Figure05BinaryJoin() {
         y={104}
         width={520}
         height={428}
-        rx={9}
         fill={softFill}
         stroke={softStroke}
         strokeWidth={0.85}
@@ -70,7 +69,6 @@ export function Figure05BinaryJoin() {
         y={88}
         width={248}
         height={342}
-        rx={9}
         fill={softFill}
         stroke={softStroke}
         strokeWidth={0.85}

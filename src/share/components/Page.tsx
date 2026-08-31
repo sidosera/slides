@@ -35,7 +35,6 @@ export function PageStack({
             y={y + i * 7}
             width={w}
             height={h}
-            rx={FRAME_RADIUS}
             fill="none"
             stroke="#edf1f6"
             strokeWidth={0.8}
@@ -47,7 +46,6 @@ export function PageStack({
           y={y}
           width={w}
           height={h}
-          rx={FRAME_RADIUS}
           fill="rgba(247,249,252,0.48)"
           stroke="#edf1f6"
           strokeWidth={0.8}
@@ -65,7 +63,6 @@ export function PageStack({
           y={y + i * 10}
           width={w}
           height={h}
-          rx={FRAME_RADIUS}
           fill="none"
           stroke={C.darkGray}
           strokeWidth={1}
@@ -78,7 +75,6 @@ export function PageStack({
         y={y}
         width={w}
         height={h}
-        rx={FRAME_RADIUS}
         fill="none"
         stroke={C.mediumGray}
         strokeWidth={1}
@@ -129,7 +125,6 @@ export function TypedBlock({
         y={y}
         width={w}
         height={headerHeight}
-        rx={RADIUS}
         fill={fill}
         stroke="none"
       />
@@ -138,7 +133,6 @@ export function TypedBlock({
         y={y}
         width={w}
         height={h}
-        rx={RADIUS}
         fill="none"
         stroke={stroke}
         strokeWidth={1.5}

@@ -35,7 +35,6 @@ export function Node({
         y={y}
         width={w}
         height={h}
-        rx={radius}
         fill={FILL[variant]}
         stroke={STROKE[variant]}
         strokeWidth={variant === "neutral" || variant === "muted" ? 1 : 1.5}

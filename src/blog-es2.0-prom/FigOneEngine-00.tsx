@@ -1,6 +1,6 @@
-import { Figure } from "../../share"
-import { Node, Arrow, GroupLabel } from "../../share"
-import { C, FONT_MONO, TINT } from "../../share"
+import { Figure } from "../share"
+import { Node, Arrow, GroupLabel } from "../share"
+import { C, FONT_MONO, TINT } from "../share"
 
 // FIGURE 13 — The shared engine (light, concluding). The technically informed
 // echo of Figure 01: PromQL owns semantics, Elasticsearch owns execution.
@@ -128,7 +128,6 @@ export function Figure13SharedEngine() {
         y={y}
         width={w}
         height={h}
-        rx={6}
         fill={fill}
         stroke={stroke}
         strokeWidth={0.95}
@@ -220,7 +219,6 @@ export function Figure13SharedEngine() {
               y={gridY + row * (cellH + gap)}
               width={cellW}
               height={cellH}
-              rx={2}
               fill={column.fill}
               stroke={column.stroke}
               strokeWidth={0.32}
@@ -272,7 +270,6 @@ export function Figure13SharedEngine() {
             y={y - i * 3.2}
             width={w}
             height={h}
-            rx={5}
             fill={C.white}
             stroke={C.mediumGray}
             strokeWidth={0.5}
@@ -284,7 +281,6 @@ export function Figure13SharedEngine() {
           y={y}
           width={w}
           height={h}
-          rx={5}
           fill={C.white}
           stroke={C.darkGray}
           strokeWidth={0.85}
@@ -313,7 +309,6 @@ export function Figure13SharedEngine() {
                 y={bodyY}
                 width={laneW}
                 height={bodyH}
-              rx={1.8}
               fill={column.fill}
               stroke={column.stroke}
               strokeWidth={0.65}
@@ -372,7 +367,6 @@ export function Figure13SharedEngine() {
         y={plannerY}
         width={plannerW}
         height={94}
-        rx={8}
         fill={contextFill}
         stroke={contextStroke}
         strokeWidth={0.8}
@@ -442,7 +436,6 @@ export function Figure13SharedEngine() {
         y={engineY}
         width={engineW}
         height={engineH}
-        rx={8}
         fill={contextFill}
         stroke={contextStroke}
         strokeWidth={0.8}

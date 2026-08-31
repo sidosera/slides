@@ -9,7 +9,7 @@ import {
   SectionTitle,
   StateColumn,
   TINT,
-} from "../../share"
+} from "../share"
 
 // FIGURE 16 — Flat composite key: step embedded alongside label dims.
 // Top: a Page made of typed Blocks. Bottom: BytesRefHash(Page) assigns
@@ -151,7 +151,6 @@ function SoftFrame({
       y={y}
       width={w}
       height={h}
-      rx={8}
       fill={inset ? "none" : CONTEXT_FILL}
       stroke={inset ? INSET_STROKE : CONTEXT_STROKE}
       strokeWidth={0.85}

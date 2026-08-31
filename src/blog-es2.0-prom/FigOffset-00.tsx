@@ -1,4 +1,4 @@
-import { Figure } from "../../share"
+import { Figure } from "../share"
 import {
   Edge,
   Annotation,
@@ -7,8 +7,8 @@ import {
   Chip,
   Arrow,
   Node,
-} from "../../share"
-import { C, TINT } from "../../share"
+} from "../share"
+import { C, TINT } from "../share"
 
 // FIGURE 10 — offset moves selector evaluation (light).
 // Two timelines sharing the same evaluation timestamp T.
@@ -52,7 +52,6 @@ export function Figure10Offset() {
         y={y - 12}
         width={x2 - x1}
         height={24}
-        rx={6}
         fill="rgba(8,154,150,0.055)"
         stroke={C.teal}
         strokeWidth={1}
@@ -85,7 +84,6 @@ export function Figure10Offset() {
         y={106}
         width={788}
         height={78}
-        rx={9}
         fill={softFill}
         stroke={softStroke}
         strokeWidth={0.85}
@@ -95,7 +93,6 @@ export function Figure10Offset() {
         y={226}
         width={788}
         height={78}
-        rx={9}
         fill={softFill}
         stroke={softStroke}
         strokeWidth={0.85}

@@ -1,4 +1,4 @@
-import { Figure } from "../../share"
+import { Figure } from "../share"
 import {
   Node,
   Arrow,
@@ -7,8 +7,8 @@ import {
   GroupLabel,
   Label,
   Edge,
-} from "../../share"
-import { C, TINT } from "../../share"
+} from "../share"
+import { C, TINT } from "../share"
 
 // FIGURE 12 — Pack label dimensions before the exchange.
 // BEFORE: raw label column vectors (including step) all cross the network;
@@ -224,7 +224,6 @@ export function Figure12Pack() {
         y={84 + 3 * 42 - 2}
         width={NW + 4}
         height={34}
-        rx={9}
         fill="none"
         stroke={C.elasticBlue}
         strokeWidth={0}

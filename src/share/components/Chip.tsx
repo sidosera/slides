@@ -30,7 +30,6 @@ export function Chip({
         y={y - h / 2}
         width={w}
         height={h}
-        rx={5}
         fill={C.lightGray}
         stroke={C.mediumGray}
         strokeWidth={1}
@@ -105,7 +104,6 @@ export function KeySegment({
         y={y}
         width={w}
         height={h}
-        rx={3}
         fill={fill}
         stroke={stroke}
         strokeWidth={0.75}

@@ -40,7 +40,6 @@ export function StateColumn({
               y={rowY}
               width={w}
               height={h}
-              rx={3}
               fill={STATE_FILL}
               stroke={C.lightPink}
               strokeWidth={1}

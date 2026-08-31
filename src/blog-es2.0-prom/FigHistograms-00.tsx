@@ -1,6 +1,6 @@
-import { Figure } from "../../share"
-import { Node, Arrow, Annotation, GroupLabel, Label } from "../../share"
-import { C } from "../../share"
+import { Figure } from "../share"
+import { Node, Arrow, Annotation, GroupLabel, Label } from "../share"
+import { C } from "../share"
 
 // FIGURE 09 — Classic vs native histogram representation (medium).
 // Same PromQL function, two execution shapes: buckets-as-series vs value.
@@ -23,7 +23,6 @@ export function Figure09Histograms() {
         y={38}
         width={864}
         height={186}
-        rx={9}
         fill={softFill}
         stroke={softStroke}
         strokeWidth={0.85}
@@ -66,7 +65,6 @@ export function Figure09Histograms() {
         y={282}
         width={864}
         height={112}
-        rx={9}
         fill={softFill}
         stroke={softStroke}
         strokeWidth={0.85}

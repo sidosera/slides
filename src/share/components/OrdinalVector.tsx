@@ -33,7 +33,6 @@ export function OrdinalVector({
         y={y}
         width={w}
         height={h}
-        rx={4}
         fill={C.lightGray}
         stroke={C.mediumGray}
         strokeWidth={1}

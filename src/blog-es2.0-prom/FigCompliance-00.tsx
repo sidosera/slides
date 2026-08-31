@@ -1,5 +1,5 @@
-import { Figure } from "../../share"
-import { C, FONT_MONO, TINT } from "../../share"
+import { Figure } from "../share"
+import { C, FONT_MONO, TINT } from "../share"
 
 // FIGURE 08 — Real-world dashboards become a continuous compatibility process.
 const W = 1040
@@ -39,9 +39,9 @@ function MiniDashboard({ x, y, accent, scale = 1 }: { x: number; y: number; acce
 
   return (
     <g>
-      <rect x={x} y={y} width={w} height={h} rx={5} fill={cardFill} stroke={panelStroke} strokeWidth={0.7} />
-      <rect x={x + 6 * scale} y={y + 7 * scale} width={18 * scale} height={10 * scale} rx={2} fill={accent} opacity={0.12} />
-      <rect x={x + 30 * scale} y={y + 7 * scale} width={20 * scale} height={10 * scale} rx={2} fill={C.lightGray} opacity={0.9} />
+      <rect x={x} y={y} width={w} height={h} fill={cardFill} stroke={panelStroke} strokeWidth={0.7} />
+      <rect x={x + 6 * scale} y={y + 7 * scale} width={18 * scale} height={10 * scale} fill={accent} opacity={0.12} />
+      <rect x={x + 30 * scale} y={y + 7 * scale} width={20 * scale} height={10 * scale} fill={C.lightGray} opacity={0.9} />
       <polyline
         points={`${x + 7 * scale},${y + 30 * scale} ${x + 16 * scale},${y + 24 * scale} ${x + 25 * scale},${y + 28 * scale} ${x + 35 * scale},${y + 20 * scale} ${x + 51 * scale},${y + 23 * scale}`}
         fill="none"
@@ -81,13 +81,13 @@ function QueryStack({ x, y }: { x: number; y: number }) {
 
   return (
     <g>
-      <rect x={x + 4} y={y} width={228} height={148} rx={7} fill="rgba(255,255,255,0.64)" stroke="rgba(223,229,238,0.54)" strokeWidth={0.7} />
+      <rect x={x + 4} y={y} width={228} height={148} fill="rgba(255,255,255,0.64)" stroke="rgba(223,229,238,0.54)" strokeWidth={0.7} />
       {queries.map((query, i) => (
         <g key={query.color}>
-          <rect x={x + 10} y={y + 28 + i * 22} width={214} height={17.5} rx={3} fill={i === 1 ? "rgba(11,100,221,0.04)" : "rgba(255,255,255,0.24)"} stroke={i === 1 ? "rgba(11,100,221,0.24)" : "transparent"} strokeWidth={0.5} />
+          <rect x={x + 10} y={y + 28 + i * 22} width={214} height={17.5} fill={i === 1 ? "rgba(11,100,221,0.04)" : "rgba(255,255,255,0.24)"} stroke={i === 1 ? "rgba(11,100,221,0.24)" : "transparent"} strokeWidth={0.5} />
           <circle cx={x + 24} cy={y + 36.8 + i * 22} r={3} fill={query.color} opacity={0.58} />
           {query.bars.map((bar, j) => (
-            <rect key={`${query.color}-${j}`} x={x + 46 + j * 56} y={y + 33 + i * 22} width={bar} height={6} rx={3} fill={C.mutedInk} opacity={j === 0 ? 0.58 : 0.32} />
+            <rect key={`${query.color}-${j}`} x={x + 46 + j * 56} y={y + 33 + i * 22} width={bar} height={6} fill={C.mutedInk} opacity={j === 0 ? 0.58 : 0.32} />
           ))}
         </g>
       ))}
@@ -95,7 +95,7 @@ function QueryStack({ x, y }: { x: number; y: number }) {
         <circle cx={x + 20} cy={y + 127} r={1.8} fill={C.faintInk} />
         <circle cx={x + 28} cy={y + 127} r={1.8} fill={C.faintInk} />
         <circle cx={x + 36} cy={y + 127} r={1.8} fill={C.faintInk} />
-        <rect x={x + 52} y={y + 124} width={112} height={5.5} rx={2.5} fill={C.faintInk} />
+        <rect x={x + 52} y={y + 124} width={112} height={5.5} fill={C.faintInk} />
       </g>
     </g>
   )
@@ -110,15 +110,15 @@ function DiffHarness({ x, y }: { x: number; y: number }) {
 
   return (
     <g>
-      <rect x={x + 4} y={y + 26} width={230} height={104} rx={7} fill="rgba(255,255,255,0.68)" stroke="rgba(223,229,238,0.58)" strokeWidth={0.7} />
+      <rect x={x + 4} y={y + 26} width={230} height={104} fill="rgba(255,255,255,0.68)" stroke="rgba(223,229,238,0.58)" strokeWidth={0.7} />
       {lines.map((line, i) => (
         <g key={line.prefix}>
-          <rect x={x + 11} y={y + 40 + i * 25} width={216} height={19} rx={3} fill={line.fill} />
+          <rect x={x + 11} y={y + 40 + i * 25} width={216} height={19} fill={line.fill} />
           <text x={x + 27} y={y + 49.5 + i * 25} textAnchor="middle" dominantBaseline="central" fontFamily={FONT_MONO} fontSize={10.4} fontWeight={640} fill={line.prefix === "-" ? C.darkTeal : line.prefix === "+" ? C.darkBlue : C.mutedInk}>
             {line.prefix}
           </text>
           {line.bars.map((bar, j) => (
-            <rect key={`${line.prefix}-${j}`} x={x + 48 + j * 62} y={y + 46.5 + i * 25} width={bar} height={6} rx={3} fill={line.color} opacity={j === 0 ? 0.7 : 0.42} />
+            <rect key={`${line.prefix}-${j}`} x={x + 48 + j * 62} y={y + 46.5 + i * 25} width={bar} height={6} fill={line.color} opacity={j === 0 ? 0.7 : 0.42} />
           ))}
         </g>
       ))}
@@ -137,7 +137,7 @@ function GateStack({ x, y }: { x: number; y: number }) {
           <text x={x + 24} y={y + 42 + i * 42} textAnchor="middle" dominantBaseline="central" fontSize={8.4} fontWeight={760} fill={C.darkTeal}>
             ✓
           </text>
-          <rect x={x + 46} y={y + 38.5 + i * 42} width={row} height={7} rx={3.5} fill={C.ink} opacity={0.62} />
+          <rect x={x + 46} y={y + 38.5 + i * 42} width={row} height={7} fill={C.ink} opacity={0.62} />
         </g>
       ))}
     </g>
@@ -148,6 +148,7 @@ export function Figure08Methodology() {
   return (
     <Figure
       number="08"
+      showNumber={false}
       title="Real-world PromQL becomes a continuous compatibility process"
       subtitle="Public dashboards feed a query dataset. Every change runs differential tests against Prometheus and Elasticsearch, then the same corpus gates pull requests, nightly builds, and releases."
       width={W}
@@ -159,7 +160,7 @@ export function Figure08Methodology() {
         </filter>
       </defs>
       <CoverageBackdrop />
-      <rect x={48} y={88} width={944} height={242} rx={12} fill={softFill} stroke={softStroke} strokeWidth={0.75} />
+      <rect x={48} y={88} width={944} height={242} fill={softFill} stroke={softStroke} strokeWidth={0.75} />
 
       <g opacity={0.86} transform="translate(48 94) scale(1.13) translate(-62 -100)">
         <InternetDashboards x={62} y={100} />

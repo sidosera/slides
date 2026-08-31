@@ -2,7 +2,6 @@ import {
   BlockPage,
   C,
   CompositeKeyTable,
-  ContextFrame,
   Figure,
   FONT_MONO,
   GroupLabel,
@@ -101,21 +100,21 @@ const INPUT_COLS = [
     field: "service",
     blockType: "Block$OrdinalByteRef",
     values: ROWS.map((r) => r.svc),
-    w: 184,
-    color: C.darkGray,
+    w: 220,
+    color: C.mutedInk,
     stroke: C.darkGray,
     fill: C.white,
-    valueSize: 8,
+    valueSize: 8.7,
   },
   {
     field: "region",
     blockType: "Block$OrdinalByteRef",
     values: ROWS.map((r) => r.region),
-    w: 116,
-    color: C.darkGray,
+    w: 126,
+    color: C.mutedInk,
     stroke: C.darkGray,
     fill: C.white,
-    valueSize: 8.5,
+    valueSize: 9.2,
   },
 ] as const
 
@@ -123,7 +122,7 @@ const INPUT_ITEMS = [
   INPUT_COLS[0],
   INPUT_COLS[1],
   INPUT_COLS[2],
-  { kind: "ellipsis", w: 34 },
+  { kind: "ellipsis", w: 26 },
   INPUT_COLS[3],
 ] as const
 
@@ -169,7 +168,7 @@ const PACK_ITEMS = [
   },
 ] as const
 const PACK_BLOCKS_W = rowWidth(PACK_ITEMS, PACK_GAP)
-const PACK_HASH_W = 286
+const PACK_HASH_W = 330
 const PACK_PAGE_GAP = 34
 const PACK_PAGE_W = PACK_BLOCKS_W + PACK_PAGE_GAP + PACK_HASH_W + 32
 const PACK_PAGE_X = Math.round((W - PACK_PAGE_W) / 2)
@@ -190,11 +189,11 @@ const AGG_LABEL_Y = AGG_FRAME_Y - 12
 
 const AGG_KEY_X = INPUT_X0
 const AGG_KEY_Y = AGG_FRAME_Y + 44
-const AGG_KEY_W = 212
+const AGG_KEY_W = 240
 const AGG_KEY_H = 126
 const AGG_KEY_ROW_H = 26
 
-const AGG_ORD_X = AGG_KEY_X + AGG_KEY_W + 70
+const AGG_ORD_X = AGG_KEY_X + AGG_KEY_W + 78
 const AGG_ORD_Y = AGG_KEY_Y + 16
 const AGG_ORD_W = 36
 const AGG_ORD_CELL_H = 25
@@ -205,11 +204,40 @@ const AGG_BLOCKHASH_Y = AGG_KEY_Y - 16
 const AGG_BLOCKHASH_W = AGG_ORD_X + AGG_ORD_W - AGG_BLOCKHASH_X + 10
 const AGG_BLOCKHASH_H = AGG_KEY_H + 32
 
-const STATE_X = INPUT_PAGE_X + INPUT_PAGE_W - 18 - 108
-const STATE_W = 108
+const STATE_X = INPUT_PAGE_X + INPUT_PAGE_W - 18 - 128
+const STATE_W = 128
 const STATE_H = 18
 
 const TOTAL_H = AGG_FRAME_Y + AGG_FRAME_H + 28
+const CONTEXT_FILL = "rgba(247,249,252,0.62)"
+const CONTEXT_STROKE = "#edf1f6"
+const INSET_STROKE = "#dfe5ee"
+
+function SoftFrame({
+  x,
+  y,
+  w,
+  h,
+  inset,
+}: {
+  x: number
+  y: number
+  w: number
+  h: number
+  inset?: boolean
+}) {
+  return (
+    <rect
+      x={x}
+      y={y}
+      width={w}
+      height={h}
+      fill={inset ? "none" : CONTEXT_FILL}
+      stroke={inset ? INSET_STROKE : CONTEXT_STROKE}
+      strokeWidth={0.85}
+    />
+  )
+}
 
 function PackedPage() {
   return (
@@ -229,6 +257,7 @@ function PackedPage() {
         cellHeight={PACK_CELL}
         gap={PACK_GAP}
         items={PACK_ITEMS}
+        softFrame
       />
       <line
         x1={PACK_ORD_X + PACK_ORD_W + 8}
@@ -236,7 +265,8 @@ function PackedPage() {
         x2={PAGE_HASH_X - 8}
         y2={PACK_TOP + PACK_H / 2}
         stroke={C.mediumGray}
-        strokeWidth={1}
+        strokeWidth={0.9}
+        opacity={0.68}
         markerEnd="url(#mk-gray-small)"
       />
       <PackedValuesTable />
@@ -252,18 +282,16 @@ function PackedValuesTable() {
         y={PAGE_HASH_Y}
         width={PACK_HASH_W}
         height={PAGE_HASH_H}
-        rx={6}
-        fill="none"
-        stroke={C.poppy}
-        strokeWidth={1}
+        fill="rgba(255,255,255,0.78)"
+        stroke="rgba(250,116,78,0.68)"
+        strokeWidth={0.85}
       />
       <rect
         x={PAGE_HASH_X}
         y={PAGE_HASH_Y}
         width={PACK_HASH_W}
         height={22}
-        rx={6}
-        fill={TINT.error}
+        fill="rgba(250,116,78,0.055)"
         stroke="none"
       />
       <text
@@ -272,7 +300,7 @@ function PackedValuesTable() {
         textAnchor="middle"
         dominantBaseline="central"
         fontFamily={FONT_MONO}
-        fontSize={7.2}
+        fontSize={8.6}
         fontWeight={700}
         fill={C.poppy}
         letterSpacing={0.5}
@@ -286,47 +314,47 @@ function PackedValuesTable() {
         rowH={24}
         chipH={16}
         label=""
-        rowLabelSize={6.2}
-        tagSize={6.2}
-        ellipsisSize={9}
+        rowLabelSize={7.2}
+        tagSize={7.2}
+        ellipsisSize={10}
         rows={PACKED_VALUES.map((entry) => ({
           id: entry.packed,
           label: entry.packed,
           segments: [
             {
-              x: PAGE_HASH_X + 30,
-              w: 42,
+              x: PAGE_HASH_X + 34,
+              w: 48,
               h: 16,
               label: entry.podKey,
               fill: TINT.physical,
               stroke: C.elasticBlue,
               color: C.darkBlue,
-              opacity: 0.68,
+              opacity: 0.85,
             },
             {
-              x: PAGE_HASH_X + 76,
-              w: 92,
+              x: PAGE_HASH_X + 88,
+              w: 116,
               h: 16,
               label: entry.svc,
               fill: C.lightGray,
               stroke: C.mediumGray,
-              color: C.darkGray,
-              size: 6,
+              color: C.mutedInk,
+              size: 7.1,
             },
             {
-              x: PAGE_HASH_X + 184,
-              w: 48,
+              x: PAGE_HASH_X + 226,
+              w: 58,
               h: 16,
               label: entry.region,
               fill: C.lightGray,
               stroke: C.mediumGray,
-              color: C.darkGray,
-              size: 5.9,
+              color: C.mutedInk,
+              size: 6.9,
             },
           ],
-          ellipsisX: PAGE_HASH_X + 175,
+          ellipsisX: PAGE_HASH_X + 214,
           tag: {
-            x: PAGE_HASH_X + 242,
+            x: PAGE_HASH_X + 296,
             text: entry.size,
           },
         }))}
@@ -344,28 +372,28 @@ function AggregateKeys() {
       segments: [
         {
           x,
-          w: 52,
+          w: 58,
           h: 16,
           label: entry.step,
           fill: TINT.semantic,
           stroke: C.teal,
           color: C.darkTeal,
-          size: 7.2,
-          opacity: 0.68,
+          size: 8.1,
+          opacity: 0.88,
         },
         {
-          x: x + 57,
-          w: 48,
+          x: x + 64,
+          w: 62,
           h: 16,
           label: `packed=${entry.packed}`,
           fill: TINT.error,
           stroke: C.poppy,
           color: C.poppy,
-          size: 6,
+          size: 7.2,
         },
       ],
       tag: {
-        x: x + 116,
+        x: x + 140,
         text: entry.size,
       },
     }
@@ -452,6 +480,7 @@ export function Figure16CopyNoPacking() {
         cellHeight={INPUT_CELL}
         gap={INPUT_GAP}
         items={INPUT_ITEMS}
+        softFrame
       />
 
       <line
@@ -460,7 +489,8 @@ export function Figure16CopyNoPacking() {
         x2={W / 2}
         y2={PACK_TOP - 10}
         stroke={C.darkGray}
-        strokeWidth={1.4}
+        strokeWidth={1.1}
+        opacity={0.68}
         markerEnd="url(#mk-gray)"
       />
 
@@ -472,34 +502,40 @@ export function Figure16CopyNoPacking() {
         x2={W / 2}
         y2={AGG_FRAME_Y - 10}
         stroke={C.darkGray}
-        strokeWidth={1.4}
+        strokeWidth={1.1}
+        opacity={0.68}
         markerEnd="url(#mk-gray)"
       />
 
-      <ContextFrame
+      <SoftFrame
         x={AGG_FRAME_X}
         y={AGG_FRAME_Y}
         w={AGG_FRAME_W}
         h={AGG_FRAME_H}
-        color={C.darkGray}
       />
       <GroupLabel x={INPUT_X0} y={AGG_LABEL_Y}>
         AGGREGATE
       </GroupLabel>
 
-      <ContextFrame
+      <SoftFrame
         x={AGG_BLOCKHASH_X}
         y={AGG_BLOCKHASH_Y}
         w={AGG_BLOCKHASH_W}
         h={AGG_BLOCKHASH_H}
-        color={C.teal}
+        inset
       />
       <SectionTitle
         x={AGG_BLOCKHASH_X + AGG_BLOCKHASH_W / 2}
         y={AGG_BLOCKHASH_Y + 14}
         color={C.darkTeal}
+        size={8.8}
       >
-        HASH(step, HASH(_packed))
+        <tspan fill={C.darkTeal}>HASH(</tspan>
+        <tspan fill={C.darkTeal} fillOpacity={0.68}>step, </tspan>
+        <tspan fill={C.darkTeal}>HASH(</tspan>
+        <tspan fill={C.darkTeal} fillOpacity={0.68}>_packed</tspan>
+        <tspan fill={C.darkTeal}>)</tspan>
+        <tspan fill={C.darkTeal}>)</tspan>
       </SectionTitle>
       <AggregateKeys />
       <line

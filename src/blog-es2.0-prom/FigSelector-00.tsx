@@ -1,6 +1,6 @@
-import { Figure } from "../../share"
-import { Node, Arrow, Chip, Edge, Annotation, GroupLabel } from "../../share"
-import { C } from "../../share"
+import { Figure } from "../share"
+import { Node, Arrow, Chip, Edge, Annotation, GroupLabel } from "../share"
+import { C } from "../share"
 
 // FIGURE 06 — Selector locality bug (major). A planner postmortem:
 // merging operand filters globally collapses the query to nothing.

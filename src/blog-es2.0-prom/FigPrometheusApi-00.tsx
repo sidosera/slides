@@ -1,5 +1,5 @@
-import { Figure } from "../../share"
-import { C, FONT_MONO, TINT } from "../../share"
+import { Figure } from "../share"
+import { C, FONT_MONO, TINT } from "../share"
 
 // FIGURE 14 — Native Prometheus ingest and query APIs in Elasticsearch.
 // Two Prometheus-compatible HTTP paths enter the same Elasticsearch server:
@@ -116,7 +116,6 @@ function Node({
         y={y}
         width={w}
         height={h}
-        rx={7}
         fill={fill}
         stroke={stroke}
         strokeWidth={1}
@@ -167,7 +166,6 @@ function TransformPanel({
         y={y}
         width={188}
         height={116}
-        rx={8}
         fill="rgba(255,255,255,0.72)"
         stroke={panelStroke}
         strokeWidth={0.85}
@@ -209,7 +207,6 @@ export function Figure14PrometheusApis() {
         y={92}
         width={174}
         height={284}
-        rx={10}
         fill={softFill}
         stroke={softStroke}
         strokeWidth={0.85}
@@ -244,7 +241,6 @@ export function Figure14PrometheusApis() {
         y={54}
         width={682}
         height={374}
-        rx={12}
         fill={softFill}
         stroke={softStroke}
         strokeWidth={0.85}

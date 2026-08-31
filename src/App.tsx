@@ -1,4 +1,4 @@
-import { figures } from "./figures/promql-elasticsearch/catalog"
+import { figures } from "./blog-es2.0-prom/catalog"
 
 export default function App() {
   return (

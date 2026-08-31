@@ -1,6 +1,6 @@
-import { Figure } from "../../share"
-import { Node, Arrow, Edge, Annotation, GroupLabel, Label } from "../../share"
-import { C } from "../../share"
+import { Figure } from "../share"
+import { Node, Arrow, Edge, Annotation, GroupLabel, Label } from "../share"
+import { C } from "../share"
 
 // FIGURE 03 — rate() changes the execution model (medium).
 // Naive relational path (de-emphasized, insufficient) vs. the real per-series

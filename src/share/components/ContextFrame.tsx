@@ -22,7 +22,6 @@ export function ContextFrame({
       y={y}
       width={w}
       height={h}
-      rx={FRAME_RADIUS}
       fill="none"
       stroke={color}
       strokeWidth={1}
