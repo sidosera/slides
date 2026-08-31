@@ -105,68 +105,109 @@ function EngineColumns() {
   )
 }
 
-type Part = { t: string; c: string }
+const collapsedRows = [
+  {
+    timestamp: ["10:00", "10:01", "10:02"],
+    value: ["42", "43", "41"],
+    service: ["nginx-proxy"],
+    region: ["us-west-1"],
+  },
+  {
+    timestamp: ["10:00", "10:01"],
+    value: ["12", "14"],
+    service: ["vllm-xlarge.service"],
+    region: ["us-east-1"],
+  },
+] as const
 
-function PrometheusRows({ x, y, w }: { x: number; y: number; w: number }) {
-  const rowH    = 56
-  const rowGap  = 10
-  const padV    = 12
-  const lineH   = 16
-  const lineGap = 4
-  const fs      = 9
-  const lx      = x + 16
+type CollapsedRow = (typeof collapsedRows)[number]
 
-  const series: Array<{ accent: string; l1: Part[]; l2: Part[] }> = [
-    {
-      accent: A,
-      l1: [
-        { t: '{', c: GRY }, { t: 'metric', c: KEY }, { t: ':{', c: GRY },
-        { t: 'service', c: KEY }, { t: ':', c: GRY }, { t: '"nginx-proxy"', c: A },
-        { t: ', ', c: GRY }, { t: 'region', c: KEY }, { t: ':', c: GRY },
-        { t: '"us-west-1"', c: A }, { t: '},', c: GRY },
-      ],
-      l2: [
-        { t: ' values', c: KEY }, { t: ':[[', c: GRY },
-        { t: '10:00', c: A }, { t: ',"', c: GRY }, { t: '42', c: C.ink }, { t: '"],[', c: GRY },
-        { t: '10:01', c: A }, { t: ',"', c: GRY }, { t: '43', c: C.ink }, { t: '"],[', c: GRY },
-        { t: '10:02', c: A }, { t: ',"', c: GRY }, { t: '41', c: C.ink }, { t: '"]]', c: GRY },
-        { t: '}', c: GRY },
-      ],
-    },
-    {
-      accent: B,
-      l1: [
-        { t: '{', c: GRY }, { t: 'metric', c: KEY }, { t: ':{', c: GRY },
-        { t: 'service', c: KEY }, { t: ':', c: GRY }, { t: '"vllm-xlarge.service"', c: B },
-        { t: ', ', c: GRY }, { t: 'region', c: KEY }, { t: ':', c: GRY },
-        { t: '"us-east-1"', c: B }, { t: '},', c: GRY },
-      ],
-      l2: [
-        { t: ' values', c: KEY }, { t: ':[[', c: GRY },
-        { t: '10:00', c: B }, { t: ',"', c: GRY }, { t: '12', c: C.ink }, { t: '"],[', c: GRY },
-        { t: '10:01', c: B }, { t: ',"', c: GRY }, { t: '14', c: C.ink }, { t: '"]]', c: GRY },
-        { t: '}', c: GRY },
-      ],
-    },
-  ]
+const collapsedDefs: Array<{
+  label: string
+  w: number
+  size: number
+  get: (row: CollapsedRow) => readonly string[]
+  fill: string
+  stroke: string
+  text: string
+}> = [
+  { label: "timestamp", w: 80, size: 7.2, get: (r) => r.timestamp, fill: TINT.physical, stroke: C.blue, text: C.darkBlue },
+  { label: "value", w: 52, size: 8, get: (r) => r.value, fill: TINT.value, stroke: C.pink, text: C.pink },
+  { label: "service", w: 175, size: 8.2, get: (r) => r.service, fill: TINT.semantic, stroke: C.teal, text: C.darkTeal },
+  { label: "region", w: 98, size: 8, get: (r) => r.region, fill: C.lightGray, stroke: C.darkGray, text: C.mutedInk },
+]
 
+const COLLAPSED_ROW_H = 58
+const COLLAPSED_H = HDR_H + collapsedRows.length * COLLAPSED_ROW_H
+
+function CollapsedColumns({ y }: { y: number }) {
   return (
     <g>
-      {series.map((s, i) => {
-        const ry  = y + i * (rowH + rowGap)
-        const l1y = ry + padV + lineH / 2
-        const l2y = ry + padV + lineH + lineGap + lineH / 2
+      {collapsedDefs.map((col, ci) => {
+        const x = colXs[ci]
         return (
-          <g key={i}>
-            <rect x={x} y={ry} width={w} height={rowH}
-              fill="rgba(255,255,255,0.92)" stroke={SOFT_STROKE} strokeWidth={0.85} />
-            <rect x={x} y={ry} width={3} height={rowH} fill={s.accent} opacity={0.5} />
-            <text x={lx} y={l1y} dominantBaseline="central" fontSize={fs} fontFamily={MONO}>
-              {s.l1.map((p, pi) => <tspan key={pi} fill={p.c}>{p.t}</tspan>)}
+          <g key={col.label}>
+            <rect x={x} y={y} width={col.w} height={COLLAPSED_H} fill="rgba(255,255,255,0.92)" stroke={col.stroke} strokeWidth={0.85} />
+            <rect x={x} y={y} width={col.w} height={HDR_H} fill={col.fill} />
+            <text
+              x={x + col.w / 2}
+              y={y + HDR_H / 2}
+              textAnchor="middle"
+              dominantBaseline="central"
+              fontSize={9.5}
+              fontWeight={650}
+              fill={col.text}
+              fontFamily={MONO}
+            >
+              {col.label}
             </text>
-            <text x={lx} y={l2y} dominantBaseline="central" fontSize={fs} fontFamily={MONO}>
-              {s.l2.map((p, pi) => <tspan key={pi} fill={p.c}>{p.t}</tspan>)}
-            </text>
+            {collapsedRows.map((row, ri) => {
+              const values = col.get(row)
+              const positionY = y + HDR_H + ri * COLLAPSED_ROW_H + 7
+              const positionX = x + 5
+              const positionW = col.w - 10
+              const gap = 3
+              const valueW = (positionW - 8 - gap * (values.length - 1)) / values.length
+              return (
+                <g key={ri}>
+                  <rect
+                    x={positionX}
+                    y={positionY}
+                    width={positionW}
+                    height={44}
+                    fill={C.white}
+                    stroke={col.stroke}
+                    strokeWidth={0.5}
+                  />
+                  {values.map((value, vi) => (
+                    <g key={vi}>
+                      <rect
+                        x={positionX + 4 + vi * (valueW + gap)}
+                        y={positionY + 6}
+                        width={valueW}
+                        height={32}
+                        fill={col.fill}
+                        stroke={col.stroke}
+                        strokeWidth={0.35}
+                      />
+                      {ci >= 2 && (
+                        <text
+                          x={positionX + 4 + vi * (valueW + gap) + valueW / 2}
+                          y={positionY + 22}
+                          textAnchor="middle"
+                          dominantBaseline="central"
+                          fontSize={col.size}
+                          fill={col.text}
+                          fontFamily={MONO}
+                        >
+                          {value}
+                        </text>
+                      )}
+                    </g>
+                  ))}
+                </g>
+              )
+            })}
           </g>
         )
       })}
@@ -174,46 +215,133 @@ function PrometheusRows({ x, y, w }: { x: number; y: number; w: number }) {
   )
 }
 
+const SERIES_W = 58
+
+function SeriesSection({
+  x,
+  y,
+  height,
+  label,
+}: {
+  x: number
+  y: number
+  height: number
+  label: string
+}) {
+  return (
+    <g>
+      <text
+        x={x + SERIES_W}
+        y={y + height / 2}
+        textAnchor="end"
+        dominantBaseline="central"
+        fontSize={7.2}
+        fontWeight={700}
+        letterSpacing={0.4}
+        fill={C.mutedInk}
+        fontFamily={MONO}
+      >
+        {label}
+      </text>
+    </g>
+  )
+}
+
+function CountTag({ x, y, label }: { x: number; y: number; label: string }) {
+  return (
+    <text
+      x={x}
+      y={y}
+      textAnchor="end"
+      dominantBaseline="central"
+      fontSize={7.5}
+      fontWeight={700}
+      letterSpacing={0.4}
+      fill={C.faintInk}
+      fontFamily={MONO}
+    >
+      {label}
+    </text>
+  )
+}
+
 export function Figure04Collapse() {
-  const opW    = 220
-  const opH    = 60
-  const opY    = COL_BOTTOM + 60
+  const pagePadLeft = 75
+  const pagePadRight = 20
+  const pageHeaderH = 42
+  const pageFooterH = 16
+  const inputFrameX = COL_X - pagePadLeft
+  const inputFrameY = COL_Y - pageHeaderH
+  const frameW = TOTAL_COL_W + pagePadLeft + pagePadRight
+  const inputFrameH = pageHeaderH + COL_H + pageFooterH
+  const inputFrameBottom = inputFrameY + inputFrameH
+
+  const opW    = 200
+  const opH    = 52
+  const opY    = inputFrameBottom + 42
   const opX    = COLS_MID_X - opW / 2
 
-  const panelW = TOTAL_COL_W   // aligns with engine columns
-  const panelH = 52 * 2 + 10  // 114
-  const panelX = COL_X
-  const panelY = opY + opH + 52
+  const outputFrameY = opY + opH + 48
+  const outputY = outputFrameY + pageHeaderH
+  const outputFrameH = pageHeaderH + COLLAPSED_H + pageFooterH
 
-  const figH   = panelY + panelH + 36
+  const figH   = outputFrameY + outputFrameH + 24
 
   return (
     <Figure
       number="04"
-      title="One series, many execution rows"
-      subtitle="query_range exposed a missing execution primitive. TimeSeriesCollapse folds flat engine rows back onto the requested per-series evaluation grid."
+      title="From one position per step to one position per series"
+      subtitle="TimeSeriesCollapse removes repeated dimensions and folds timestamp and value into aligned multi-valued Blocks—without leaving the Page representation."
       width={FIG_W}
       height={figH}
     >
-      <GroupLabel x={COL_X} y={COL_Y - 18}>ENGINE</GroupLabel>
+      <rect x={inputFrameX} y={inputFrameY} width={frameW} height={inputFrameH} fill={C.white} stroke={SOFT_STROKE} strokeWidth={0.9} />
+      <GroupLabel x={COL_X} y={inputFrameY + 25}>INPUT PAGE</GroupLabel>
+      <CountTag x={COLS_RIGHT} y={inputFrameY + 25} label="5 POSITIONS" />
       <EngineColumns />
+      <SeriesSection
+        x={inputFrameX + 10}
+        y={COL_Y + HDR_H}
+        height={ROW_H * 3}
+        label="SERIES A"
+      />
+      <SeriesSection
+        x={inputFrameX + 10}
+        y={COL_Y + HDR_H + ROW_H * 3}
+        height={ROW_H * 2}
+        label="SERIES B"
+      />
 
-      <Arrow x1={COLS_MID_X} y1={COL_BOTTOM} x2={COLS_MID_X} y2={opY} variant="physical" />
+      <Arrow x1={COLS_MID_X} y1={inputFrameBottom} x2={COLS_MID_X} y2={opY - 8} variant="muted" />
 
       <rect x={opX} y={opY} width={opW} height={opH}
-        fill={TINT.physical} stroke={C.blue} strokeWidth={1.8} />
+        fill="rgba(8,154,150,0.07)" stroke={C.teal} strokeWidth={1.15} />
       <text
         x={COLS_MID_X} y={opY + opH / 2}
         textAnchor="middle" dominantBaseline="central"
-        fontSize={13.5} fontWeight={700} fill={C.darkBlue} fontFamily={MONO}
+        fontSize={12.5} fontWeight={700} fill={C.darkTeal} fontFamily={MONO}
       >
         TimeSeriesCollapse
       </text>
 
-      <Arrow x1={COLS_MID_X} y1={opY + opH} x2={COLS_MID_X} y2={panelY} variant="physical" />
+      <Arrow x1={COLS_MID_X} y1={opY + opH} x2={COLS_MID_X} y2={outputFrameY - 8} variant="semantic" />
 
-      <GroupLabel x={panelX} y={panelY - 18}>PROMETHEUS ROWS</GroupLabel>
-      <PrometheusRows x={panelX} y={panelY} w={panelW} />
+      <rect x={inputFrameX} y={outputFrameY} width={frameW} height={outputFrameH} fill={C.white} stroke={SOFT_STROKE} strokeWidth={0.9} />
+      <GroupLabel x={COL_X} y={outputFrameY + 25}>OUTPUT PAGE</GroupLabel>
+      <CountTag x={COLS_RIGHT} y={outputFrameY + 25} label="2 POSITIONS" />
+      <CollapsedColumns y={outputY} />
+      <SeriesSection
+        x={inputFrameX + 10}
+        y={outputY + HDR_H}
+        height={COLLAPSED_ROW_H}
+        label="SERIES A"
+      />
+      <SeriesSection
+        x={inputFrameX + 10}
+        y={outputY + HDR_H + COLLAPSED_ROW_H}
+        height={COLLAPSED_ROW_H}
+        label="SERIES B"
+      />
     </Figure>
   )
 }

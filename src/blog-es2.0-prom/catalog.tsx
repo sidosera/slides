@@ -12,6 +12,10 @@ import { Figure11Grid } from "./FigGrid-00"
 import { Figure12Pack } from "./FigPacking-03"
 import { Figure13SharedEngine } from "./FigOneEngine-00"
 import { Figure14PrometheusApis } from "./FigPrometheusApi-00"
+import {
+  Figure14bStreamingResponse,
+  Figure14cStreamingResponse,
+} from "./FigStreamingResponse-00"
 import { Figure13bColumnar } from "./FigColumnar-00"
 import {
   Figure15NewWindowSemantics,
@@ -36,6 +40,8 @@ export const figures: ReactNode[] = [
   <Figure12Pack />,
   <Figure13SharedEngine />,
   <Figure14PrometheusApis />,
+  <Figure14bStreamingResponse />,
+  <Figure14cStreamingResponse />,
   <Figure13bColumnar />,
   <Figure15OldWindowSemantics />,
   <Figure15NewWindowSemantics />,
