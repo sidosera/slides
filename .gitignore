@@ -1,6 +1,4 @@
 node_modules/
-dist/
-build/
 .cache/
 .env*
 .vite/
@@ -9,5 +7,5 @@ vite.config.*.timestamp-*
 *-debug.log*
 logs/
 *.log
-.claude-replay.*
-.tmp-*
+.claude*
+
