@@ -47,8 +47,19 @@ function Arrow({
 
   return (
     <g opacity={opacity}>
-      <line x1={x1} y1={y1} x2={bx} y2={by} stroke={color} strokeWidth={1.25} strokeLinecap="round" />
-      <polygon points={`${x2},${y2} ${bx + px},${by + py} ${bx - px},${by - py}`} fill={color} />
+      <line
+        x1={x1}
+        y1={y1}
+        x2={bx}
+        y2={by}
+        stroke={color}
+        strokeWidth={1.25}
+        strokeLinecap="round"
+      />
+      <polygon
+        points={`${x2},${y2} ${bx + px},${by + py} ${bx - px},${by - py}`}
+        fill={color}
+      />
     </g>
   )
 }
@@ -56,8 +67,21 @@ function Arrow({
 function TimeGrid() {
   return (
     <g>
-      <line x1={axisX} y1={axisY} x2={axisX + axisW} y2={axisY} stroke={axisStroke} strokeWidth={1.05} />
-      <text x={axisX + axisW + 22} y={axisY + 3} fontSize={10.4} fontWeight={620} fill={C.mutedInk}>
+      <line
+        x1={axisX}
+        y1={axisY}
+        x2={axisX + axisW}
+        y2={axisY}
+        stroke={axisStroke}
+        strokeWidth={1.05}
+      />
+      <text
+        x={axisX + axisW + 22}
+        y={axisY + 3}
+        fontSize={10.4}
+        fontWeight={620}
+        fill={C.mutedInk}
+      >
         @timestamp
       </text>
       {[0, 1, 2, 3, 4, 5, 6].map((i) => {
@@ -65,8 +89,21 @@ function TimeGrid() {
 
         return (
           <g key={i}>
-            <line x1={x} y1={axisY - 8} x2={x} y2={412} stroke={gridStroke} strokeWidth={0.9} />
-            <circle cx={x} cy={axisY} r={2.9} fill={C.darkGray} opacity={0.58} />
+            <line
+              x1={x}
+              y1={axisY - 8}
+              x2={x}
+              y2={412}
+              stroke={gridStroke}
+              strokeWidth={0.9}
+            />
+            <circle
+              cx={x}
+              cy={axisY}
+              r={2.9}
+              fill={C.darkGray}
+              opacity={0.58}
+            />
           </g>
         )
       })}
@@ -75,8 +112,25 @@ function TimeGrid() {
 
         return (
           <g key={bucket.label}>
-            <line x1={x} y1={axisY - 18} x2={x} y2={412} stroke={C.ink} strokeWidth={0.95} strokeDasharray="4 7" opacity={0.3} />
-            <text x={x} y={axisY - 26} textAnchor="middle" fontFamily={FONT_MONO} fontSize={11.2} fontWeight={780} fill={C.ink}>
+            <line
+              x1={x}
+              y1={axisY - 18}
+              x2={x}
+              y2={412}
+              stroke={C.ink}
+              strokeWidth={0.95}
+              strokeDasharray="4 7"
+              opacity={0.3}
+            />
+            <text
+              x={x}
+              y={axisY - 26}
+              textAnchor="middle"
+              fontFamily={FONT_MONO}
+              fontSize={11.2}
+              fontWeight={780}
+              fill={C.ink}
+            >
               {bucket.label}
             </text>
           </g>
@@ -86,10 +140,19 @@ function TimeGrid() {
   )
 }
 
-function RowLabel({ label, y }: { label: string; y: number }) {
+function RowLabel({ label, y }: { label: string y: number }) {
   return (
     <g>
-      <text x={118} y={y} textAnchor="middle" dominantBaseline="central" fontFamily={FONT_MONO} fontSize={10.6} fontWeight={780} fill={C.ink}>
+      <text
+        x={118}
+        y={y}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily={FONT_MONO}
+        fontSize={10.6}
+        fontWeight={780}
+        fill={C.ink}
+      >
         {`BUCKET ${label}`}
       </text>
     </g>
@@ -102,7 +165,7 @@ function WindowRow({
   mode,
   variable,
 }: {
-  bucket: { label: string; index: number; width: number }
+  bucket: { label: string index: number width: number }
   y: number
   mode: "forward" | "trailing"
   variable?: boolean
@@ -120,24 +183,80 @@ function WindowRow({
   return (
     <g>
       <RowLabel label={bucket.label} y={y} />
-      <line x1={axisX} y1={y} x2={axisX + axisW} y2={y} stroke={axisStroke} strokeWidth={0.95} opacity={0.36} />
-      <rect x={x} y={y - 19} width={width} height={38} fill={fill} stroke={color} strokeWidth={1.1} strokeDasharray={mode === "forward" ? "5 5" : undefined} />
+      <line
+        x1={axisX}
+        y1={y}
+        x2={axisX + axisW}
+        y2={y}
+        stroke={axisStroke}
+        strokeWidth={0.95}
+        opacity={0.36}
+      />
+      <rect
+        x={x}
+        y={y - 19}
+        width={width}
+        height={38}
+        fill={fill}
+        stroke={color}
+        strokeWidth={1.1}
+        strokeDasharray={mode === "forward" ? "5 5" : undefined}
+      />
       {variable && (
         <g>
-          <rect x={x} y={y - 19} width={0.55 * step} height={38} fill="rgba(8,154,150,0.11)" stroke={C.teal} strokeWidth={0.8} />
-          <text x={x + 0.275 * step} y={y} textAnchor="middle" dominantBaseline="central" fontFamily={FONT_MONO} fontSize={9.2} fontWeight={780} fill={C.darkTeal}>
+          <rect
+            x={x}
+            y={y - 19}
+            width={0.55 * step}
+            height={38}
+            fill="rgba(8,154,150,0.11)"
+            stroke={C.teal}
+            strokeWidth={0.8}
+          />
+          <text
+            x={x + 0.275 * step}
+            y={y}
+            textAnchor="middle"
+            dominantBaseline="central"
+            fontFamily={FONT_MONO}
+            fontSize={9.2}
+            fontWeight={780}
+            fill={C.darkTeal}
+          >
             δ
           </text>
         </g>
       )}
-      <text x={x + width / 2} y={y} textAnchor="middle" dominantBaseline="central" fontSize={10.4} fontWeight={720} fill={color}>
+      <text
+        x={x + width / 2}
+        y={y}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontSize={10.4}
+        fontWeight={720}
+        fill={color}
+      >
         {text}
       </text>
       <circle cx={labelX} cy={y} r={5} fill={color} opacity={0.82} />
       {mode === "forward" ? (
-        <Arrow x1={labelX + 12} y1={y - 29} x2={x + width - 12} y2={y - 29} color={C.poppy} opacity={0.62} />
+        <Arrow
+          x1={labelX + 12}
+          y1={y - 29}
+          x2={x + width - 12}
+          y2={y - 29}
+          color={C.poppy}
+          opacity={0.62}
+        />
       ) : (
-        <Arrow x1={labelX - 12} y1={y - 29} x2={x + 12} y2={y - 29} color={C.teal} opacity={0.76} />
+        <Arrow
+          x1={labelX - 12}
+          y1={y - 29}
+          x2={x + 12}
+          y2={y - 29}
+          color={C.teal}
+          opacity={0.76}
+        />
       )}
     </g>
   )
@@ -154,7 +273,13 @@ function StackDiagram({
     <g>
       <TimeGrid />
       {buckets.map((bucket, i) => (
-        <WindowRow key={bucket.label} bucket={bucket} y={rowYs[i]} mode={mode} variable={variableLast && i === 1} />
+        <WindowRow
+          key={bucket.label}
+          bucket={bucket}
+          y={rowYs[i]}
+          mode={mode}
+          variable={variableLast && i === 1}
+        />
       ))}
     </g>
   )
@@ -181,8 +306,25 @@ function TechniqueBucket({
 
   return (
     <g opacity={style.opacity}>
-      <rect x={x} y={y} width={w} height={54} fill={style.fill} stroke={style.stroke} strokeWidth={1.05} />
-      <text x={x + w / 2} y={y + 27} textAnchor="middle" dominantBaseline="central" fontFamily={FONT_MONO} fontSize={10.8} fontWeight={760} fill={style.stroke}>
+      <rect
+        x={x}
+        y={y}
+        width={w}
+        height={54}
+        fill={style.fill}
+        stroke={style.stroke}
+        strokeWidth={1.05}
+      />
+      <text
+        x={x + w / 2}
+        y={y + 27}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily={FONT_MONO}
+        fontSize={10.8}
+        fontWeight={760}
+        fill={style.stroke}
+      >
         {label}
       </text>
     </g>
@@ -210,8 +352,25 @@ function TechniqueState({
 
   return (
     <g>
-      <rect x={x} y={y} width={w} height={42} fill={style.fill} stroke={style.stroke} strokeWidth={1} />
-      <text x={x + w / 2} y={y + 21} textAnchor="middle" dominantBaseline="central" fontFamily={FONT_MONO} fontSize={10.3} fontWeight={720} fill={style.stroke}>
+      <rect
+        x={x}
+        y={y}
+        width={w}
+        height={42}
+        fill={style.fill}
+        stroke={style.stroke}
+        strokeWidth={1}
+      />
+      <text
+        x={x + w / 2}
+        y={y + 21}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily={FONT_MONO}
+        fontSize={10.3}
+        fontWeight={720}
+        fill={style.stroke}
+      >
         {label}
       </text>
     </g>
@@ -231,50 +390,185 @@ function VariableTechniqueDiagram() {
 
   return (
     <g>
-      <text x={86} y={190} fontFamily={FONT_MONO} fontSize={12.8} fontWeight={780} fill={C.ink}>
+      <text
+        x={86}
+        y={190}
+        fontFamily={FONT_MONO}
+        fontSize={12.8}
+        fontWeight={780}
+        fill={C.ink}
+      >
         W = T * K + δ
       </text>
 
-      <line x1={b0} y1={rowY - 34} x2={b0 + bucketW * 4} y2={rowY - 34} stroke={axisStroke} strokeWidth={1.05} />
+      <line
+        x1={b0}
+        y1={rowY - 34}
+        x2={b0 + bucketW * 4}
+        y2={rowY - 34}
+        stroke={axisStroke}
+        strokeWidth={1.05}
+      />
       {[0, 1, 2, 3, 4].map((i) => {
         const tickX = b0 + i * bucketW
 
         return (
           <g key={i}>
-            <line x1={tickX} y1={rowY - 44} x2={tickX} y2={rowY + 142} stroke={i === 3 ? C.teal : gridStroke} strokeWidth={i === 3 ? 1 : 0.9} strokeDasharray={i === 3 ? "4 7" : undefined} opacity={i === 3 ? 0.55 : 1} />
-            <circle cx={tickX} cy={rowY - 34} r={2.8} fill={i === 3 ? C.teal : C.darkGray} opacity={0.62} />
+            <line
+              x1={tickX}
+              y1={rowY - 44}
+              x2={tickX}
+              y2={rowY + 142}
+              stroke={i === 3 ? C.teal : gridStroke}
+              strokeWidth={i === 3 ? 1 : 0.9}
+              strokeDasharray={i === 3 ? "4 7" : undefined}
+              opacity={i === 3 ? 0.55 : 1}
+            />
+            <circle
+              cx={tickX}
+              cy={rowY - 34}
+              r={2.8}
+              fill={i === 3 ? C.teal : C.darkGray}
+              opacity={0.62}
+            />
           </g>
         )
       })}
-      <text x={labelX} y={rowY - 60} textAnchor="middle" fontFamily={FONT_MONO} fontSize={11.2} fontWeight={780} fill={C.ink}>
+      <text
+        x={labelX}
+        y={rowY - 60}
+        textAnchor="middle"
+        fontFamily={FONT_MONO}
+        fontSize={11.2}
+        fontWeight={780}
+        fill={C.ink}
+      >
         T3
       </text>
 
       <TechniqueBucket x={b0} y={rowY} w={bucketW} label="T0" tone="muted" />
-      <TechniqueBucket x={b0 + bucketW + gap} y={rowY} w={bucketW} label="T1" tone="full" />
-      <TechniqueBucket x={b0 + bucketW * 2 + gap} y={rowY} w={bucketW} label="T2" tone="full" />
-      <TechniqueBucket x={b0 + bucketW * 3 + gap} y={rowY} w={bucketW} label="T3" tone="label" />
+      <TechniqueBucket
+        x={b0 + bucketW + gap}
+        y={rowY}
+        w={bucketW}
+        label="T1"
+        tone="full"
+      />
+      <TechniqueBucket
+        x={b0 + bucketW * 2 + gap}
+        y={rowY}
+        w={bucketW}
+        label="T2"
+        tone="full"
+      />
+      <TechniqueBucket
+        x={b0 + bucketW * 3 + gap}
+        y={rowY}
+        w={bucketW}
+        label="T3"
+        tone="label"
+      />
 
-      <rect x={labelX - fullW - partialW} y={rowY - 28} width={partialW} height={18} fill={TINT.semantic} stroke={C.teal} strokeWidth={0.9} />
-      <text x={labelX - fullW - partialW / 2} y={rowY - 19} textAnchor="middle" dominantBaseline="central" fontFamily={FONT_MONO} fontSize={8.8} fontWeight={780} fill={C.darkTeal}>
+      <rect
+        x={labelX - fullW - partialW}
+        y={rowY - 28}
+        width={partialW}
+        height={18}
+        fill={TINT.semantic}
+        stroke={C.teal}
+        strokeWidth={0.9}
+      />
+      <text
+        x={labelX - fullW - partialW / 2}
+        y={rowY - 19}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily={FONT_MONO}
+        fontSize={8.8}
+        fontWeight={780}
+        fill={C.darkTeal}
+      >
         δ
       </text>
-      <rect x={labelX - fullW} y={rowY - 28} width={fullW} height={18} fill="rgba(11,100,221,0.075)" stroke={C.blue} strokeWidth={0.9} />
-      <text x={labelX - fullW / 2} y={rowY - 19} textAnchor="middle" dominantBaseline="central" fontFamily={FONT_MONO} fontSize={8.8} fontWeight={780} fill={C.darkBlue}>
+      <rect
+        x={labelX - fullW}
+        y={rowY - 28}
+        width={fullW}
+        height={18}
+        fill="rgba(11,100,221,0.075)"
+        stroke={C.blue}
+        strokeWidth={0.9}
+      />
+      <text
+        x={labelX - fullW / 2}
+        y={rowY - 19}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily={FONT_MONO}
+        fontSize={8.8}
+        fontWeight={780}
+        fill={C.darkBlue}
+      >
         K FULL BUCKETS
       </text>
 
-      <Arrow x1={labelX - 8} y1={rowY + bucketH + 18} x2={labelX - 178} y2={rowY + bucketH + 18} color={C.teal} opacity={0.78} />
-      <text x={labelX - 86} y={rowY + bucketH + 8} textAnchor="middle" fontFamily={FONT_MONO} fontSize={9.3} fontWeight={760} fill={C.darkTeal}>
+      <Arrow
+        x1={labelX - 8}
+        y1={rowY + bucketH + 18}
+        x2={labelX - 178}
+        y2={rowY + bucketH + 18}
+        color={C.teal}
+        opacity={0.78}
+      />
+      <text
+        x={labelX - 86}
+        y={rowY + bucketH + 8}
+        textAnchor="middle"
+        fontFamily={FONT_MONO}
+        fontSize={9.3}
+        fontWeight={760}
+        fill={C.darkTeal}
+      >
         (T3 - W, T3]
       </text>
 
-      <TechniqueState x={b0 + 16} y={rowY + 96} w={130} label="partial δ" tone="partial" />
-      <TechniqueState x={b0 + 178} y={rowY + 96} w={146} label="full states" tone="full" />
-      <TechniqueState x={b0 + 364} y={rowY + 96} w={108} label="FINAL" tone="final" />
-      <Arrow x1={b0 + 146} y1={rowY + 117} x2={b0 + 178} y2={rowY + 117} color={C.darkGray} opacity={0.56} />
-      <Arrow x1={b0 + 324} y1={rowY + 117} x2={b0 + 364} y2={rowY + 117} color={C.darkGray} opacity={0.56} />
-
+      <TechniqueState
+        x={b0 + 16}
+        y={rowY + 96}
+        w={130}
+        label="partial δ"
+        tone="partial"
+      />
+      <TechniqueState
+        x={b0 + 178}
+        y={rowY + 96}
+        w={146}
+        label="full states"
+        tone="full"
+      />
+      <TechniqueState
+        x={b0 + 364}
+        y={rowY + 96}
+        w={108}
+        label="FINAL"
+        tone="final"
+      />
+      <Arrow
+        x1={b0 + 146}
+        y1={rowY + 117}
+        x2={b0 + 178}
+        y2={rowY + 117}
+        color={C.darkGray}
+        opacity={0.56}
+      />
+      <Arrow
+        x1={b0 + 324}
+        y1={rowY + 117}
+        x2={b0 + 364}
+        y2={rowY + 117}
+        color={C.darkGray}
+        opacity={0.56}
+      />
     </g>
   )
 }

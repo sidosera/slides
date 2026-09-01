@@ -45,7 +45,7 @@ export function Figure10Offset() {
     </g>
   )
 
-  const Window = ({ x1, x2, y }: { x1: number; x2: number; y: number }) => (
+  const Window = ({ x1, x2, y }: { x1: number x2: number y: number }) => (
     <g>
       <rect
         x={x1}

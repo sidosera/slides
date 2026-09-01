@@ -15,7 +15,7 @@ const ROWS = [
   { pod: "3", ts: "t₁", val: "2.10", svc: "api-gate.us-west-1" },
 ]
 
-type RowKey = keyof (typeof ROWS)[number]
+type RowKey = keyof typeof ROWS[number]
 type ColumnSpec = {
   field: string
   key: RowKey
@@ -200,10 +200,10 @@ export function Figure13bColumnar() {
           <g key={ci}>
             {ci > 0 && (
               <line
-              x1={cx}
-              y1={TBL_TOP}
-              x2={cx}
-              y2={TBL_BOT}
+                x1={cx}
+                y1={TBL_TOP}
+                x2={cx}
+                y2={TBL_BOT}
                 stroke={PANEL_STROKE}
                 strokeWidth={0.45}
                 opacity={0.72}
@@ -750,8 +750,8 @@ export function Figure13bColumnar() {
                   y={DELTA_Y}
                   width={DC_W}
                   height={DC_H}
-              fill={TINT.semantic}
-              stroke={C.teal}
+                  fill={TINT.semantic}
+                  stroke={C.teal}
                   strokeWidth={0.7}
                 />
                 <text

@@ -34,7 +34,7 @@ function Col({
   upper: string[]
   packIndex: number
   netY: number
-  crossing: { thick: boolean; labels: string[] }
+  crossing: { thick: boolean labels: string[] }
   lower: string[]
 }) {
   const x = cx - NW / 2

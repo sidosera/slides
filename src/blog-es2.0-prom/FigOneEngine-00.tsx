@@ -258,7 +258,8 @@ export function Figure13SharedEngine() {
     const bodyH = h - 10
     const sidePadding = final ? 6 : 4
     const laneGap = final ? 7 : 4
-    const laneW = (w - sidePadding * 2 - (columns.length - 1) * laneGap) / columns.length
+    const laneW =
+      (w - sidePadding * 2 - (columns.length - 1) * laneGap) / columns.length
     const lanesX = x + sidePadding
 
     return (
@@ -309,10 +310,10 @@ export function Figure13SharedEngine() {
                 y={bodyY}
                 width={laneW}
                 height={bodyH}
-              fill={column.fill}
-              stroke={column.stroke}
-              strokeWidth={0.65}
-            />
+                fill={column.fill}
+                stroke={column.stroke}
+                strokeWidth={0.65}
+              />
               {final && (
                 <line
                   x1={laneX + 2}
@@ -456,14 +457,21 @@ export function Figure13SharedEngine() {
               label={row === 0 ? "SHARD 1" : "SHARD N"}
               offset={row}
             />
-            <EngineArrow x1={rowStorageX + rowStorageW - 5} y1={rowY} x2={rowPageX} y2={pageCy} tone="muted" />
-            <PageStack
-              x={rowPageX}
-              cy={pageCy}
-              w={rowPageW}
-              h={rowPageH}
+            <EngineArrow
+              x1={rowStorageX + rowStorageW - 5}
+              y1={rowY}
+              x2={rowPageX}
+              y2={pageCy}
+              tone="muted"
             />
-            <EngineArrow x1={rowPageX + rowPageW + 12} y1={rowY} x2={rowFilterX} y2={opCy} tone="muted" />
+            <PageStack x={rowPageX} cy={pageCy} w={rowPageW} h={rowPageH} />
+            <EngineArrow
+              x1={rowPageX + rowPageW + 12}
+              y1={rowY}
+              x2={rowFilterX}
+              y2={opCy}
+              tone="muted"
+            />
             <EngineOperator
               x={rowFilterX}
               y={opY}
@@ -473,7 +481,13 @@ export function Figure13SharedEngine() {
               stroke={C.mediumGray}
               fill={operatorFill}
             />
-            <EngineArrow x1={rowFilterX + rowOpW} y1={opCy} x2={rowAggX} y2={opCy} tone="muted" />
+            <EngineArrow
+              x1={rowFilterX + rowOpW}
+              y1={opCy}
+              x2={rowAggX}
+              y2={opCy}
+              tone="muted"
+            />
             <EngineOperator
               x={rowAggX}
               y={opY}
@@ -483,7 +497,13 @@ export function Figure13SharedEngine() {
               stroke={C.mediumGray}
               fill={operatorFill}
             />
-            <EngineArrow x1={rowAggX + rowEllipsisW} y1={opCy} x2={rowEvalX} y2={opCy} tone="muted" />
+            <EngineArrow
+              x1={rowAggX + rowEllipsisW}
+              y1={opCy}
+              x2={rowEvalX}
+              y2={opCy}
+              tone="muted"
+            />
             <EngineOperator
               x={rowEvalX}
               y={opY}
@@ -493,7 +513,12 @@ export function Figure13SharedEngine() {
               stroke={C.mediumGray}
               fill={operatorFill}
             />
-            <EngineArrow x1={rowEvalX + rowOpW} y1={opCy} x2={exchangeX} y2={exchangeCy} />
+            <EngineArrow
+              x1={rowEvalX + rowOpW}
+              y1={opCy}
+              x2={exchangeX}
+              y2={exchangeCy}
+            />
           </g>
         )
       })}
@@ -528,7 +553,14 @@ export function Figure13SharedEngine() {
         x2={finalX}
         y2={finalCy}
       />
-      <PageStack x={finalX} cy={finalCy} w={finalW} h={finalH} label="FINAL PAGE" final />
+      <PageStack
+        x={finalX}
+        cy={finalCy}
+        w={finalW}
+        h={finalH}
+        label="FINAL PAGE"
+        final
+      />
 
       <Arrow
         x1={mainX + engineW / 2}
@@ -537,7 +569,6 @@ export function Figure13SharedEngine() {
         y2={engineY}
         variant="muted"
       />
-
     </Figure>
   )
 }

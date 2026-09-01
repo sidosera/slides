@@ -334,7 +334,9 @@ export function Figure16NoPacking() {
         size={8.8}
       >
         <tspan fill={C.darkTeal}>HASH(</tspan>
-        <tspan fill={C.darkTeal} fillOpacity={0.68}>step, pod_id, service, ..., region</tspan>
+        <tspan fill={C.darkTeal} fillOpacity={0.68}>
+          step, pod_id, service, ..., region
+        </tspan>
         <tspan fill={C.darkTeal}>)</tspan>
       </SectionTitle>
       <CompositeKeyBlocks />

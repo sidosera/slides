@@ -76,32 +76,14 @@ export function Figure05BinaryJoin() {
       {/* root "/" */}
       <Node x={360} y={46} w={80} h={38} label="/" variant="neutral" mono />
       <Arrow x1={392} y1={84} x2={leftCx + 30} y2={rows[0]} variant="muted" />
-      <Arrow
-        x1={408}
-        y1={84}
-        x2={rightCx - 30}
-        y2={rows[0]}
-        variant="muted"
-      />
+      <Arrow x1={408} y1={84} x2={rightCx - 30} y2={rows[0]} variant="muted" />
 
       {branch(leftCx, "errors")}
       {branch(rightCx, "requests")}
 
       {/* converge to SERIES MATCH */}
-      <Arrow
-        x1={leftCx}
-        y1={rows[2] + h}
-        x2={370}
-        y2={340}
-        variant="muted"
-      />
-      <Arrow
-        x1={rightCx}
-        y1={rows[2] + h}
-        x2={440}
-        y2={340}
-        variant="muted"
-      />
+      <Arrow x1={leftCx} y1={rows[2] + h} x2={370} y2={340} variant="muted" />
+      <Arrow x1={rightCx} y1={rows[2] + h} x2={440} y2={340} variant="muted" />
       <Node
         x={300}
         y={340}

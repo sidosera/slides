@@ -28,19 +28,21 @@ export function PageStack({
   if (soft) {
     return (
       <g>
-        {Array.from({ length: slices }, (_, index) => slices - index).map((i) => (
-          <rect
-            key={i}
-            x={x + i * 8}
-            y={y + i * 7}
-            width={w}
-            height={h}
-            fill="none"
-            stroke="#edf1f6"
-            strokeWidth={0.8}
-            opacity={0.42 - i * 0.08}
-          />
-        ))}
+        {Array.from({ length: slices }, (_, index) => slices - index).map(
+          (i) => (
+            <rect
+              key={i}
+              x={x + i * 8}
+              y={y + i * 7}
+              width={w}
+              height={h}
+              fill="none"
+              stroke="#edf1f6"
+              strokeWidth={0.8}
+              opacity={0.42 - i * 0.08}
+            />
+          ),
+        )}
         <rect
           x={x}
           y={y}

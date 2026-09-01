@@ -531,9 +531,13 @@ export function Figure16CopyNoPacking() {
         size={8.8}
       >
         <tspan fill={C.darkTeal}>HASH(</tspan>
-        <tspan fill={C.darkTeal} fillOpacity={0.68}>step, </tspan>
+        <tspan fill={C.darkTeal} fillOpacity={0.68}>
+          step,{" "}
+        </tspan>
         <tspan fill={C.darkTeal}>HASH(</tspan>
-        <tspan fill={C.darkTeal} fillOpacity={0.68}>_packed</tspan>
+        <tspan fill={C.darkTeal} fillOpacity={0.68}>
+          _packed
+        </tspan>
         <tspan fill={C.darkTeal}>)</tspan>
         <tspan fill={C.darkTeal}>)</tspan>
       </SectionTitle>

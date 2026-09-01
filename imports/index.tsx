@@ -1,15 +1,17 @@
-import svgPaths from "./svg-1ziidi2hum";
+import svgPaths from "./svg-1ziidi2hum"
 
 function Content() {
   return (
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">Color name</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            Color name
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content1() {
@@ -19,7 +21,7 @@ function Content1() {
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full" />
       </div>
     </div>
-  );
+  )
 }
 
 function Content2() {
@@ -27,11 +29,13 @@ function Content2() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">Hex</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            Hex
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content3() {
@@ -39,11 +43,13 @@ function Content3() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">RGB</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            RGB
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content4() {
@@ -51,11 +57,13 @@ function Content4() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">CMYK</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            CMYK
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content5() {
@@ -63,53 +71,73 @@ function Content5() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">Pantone</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            Pantone
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row() {
   return (
     <div className="bg-white relative shrink-0 w-full" data-name=".Row">
       <div className="content-stretch flex items-start overflow-clip relative rounded-[inherit] size-full">
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] relative self-stretch shrink-0 w-[40px]" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] relative self-stretch shrink-0 w-[40px]"
+          data-name="Cell"
+        >
           <div className="flex flex-col items-center justify-center size-full">
             <div className="content-stretch flex flex-col items-center justify-center relative size-full">
               <Content1 />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content2 />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content3 />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content4 />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content5 />
@@ -117,9 +145,12 @@ function Row() {
           </div>
         </div>
       </div>
-      <div aria-hidden className="absolute border-b border-black border-solid inset-0 pointer-events-none" />
+      <div
+        aria-hidden
+        className="absolute border-b border-black border-solid inset-0 pointer-events-none"
+      />
     </div>
-  );
+  )
 }
 
 function Content6() {
@@ -127,11 +158,13 @@ function Content6() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Sky Blue</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Sky Blue
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content7() {
@@ -143,16 +176,22 @@ function Content7() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content7 />
     </div>
-  );
+  )
 }
 
 function Content8() {
@@ -167,7 +206,7 @@ function Content8() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content9() {
@@ -175,11 +214,13 @@ function Content9() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">69, 168, 255</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            69, 168, 255
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content10() {
@@ -187,11 +228,13 @@ function Content10() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">60, 25, 0, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            60, 25, 0, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content11() {
@@ -199,18 +242,29 @@ function Content11() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">298C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            298C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row1() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content6 />
@@ -218,32 +272,56 @@ function Row1() {
         </div>
       </div>
       <Cell />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content8 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content9 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content10 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content11 />
@@ -251,7 +329,7 @@ function Row1() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content12() {
@@ -259,11 +337,13 @@ function Content12() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Light Blue</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Light Blue
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content13() {
@@ -275,16 +355,22 @@ function Content13() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell1() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content13 />
     </div>
-  );
+  )
 }
 
 function Content14() {
@@ -292,11 +378,13 @@ function Content14() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#1893FF</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #1893FF
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content15() {
@@ -304,11 +392,13 @@ function Content15() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">24, 147, 255</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            24, 147, 255
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content16() {
@@ -316,11 +406,13 @@ function Content16() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">71, 38, 0, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            71, 38, 0, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content17() {
@@ -328,18 +420,29 @@ function Content17() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row2() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content12 />
@@ -347,32 +450,56 @@ function Row2() {
         </div>
       </div>
       <Cell1 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content14 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content15 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content16 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content17 />
@@ -380,7 +507,7 @@ function Row2() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content18() {
@@ -388,11 +515,13 @@ function Content18() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Elastic Blue</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Elastic Blue
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content19() {
@@ -404,16 +533,22 @@ function Content19() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell2() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content19 />
     </div>
-  );
+  )
 }
 
 function Content20() {
@@ -421,11 +556,13 @@ function Content20() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#0B64DD</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #0B64DD
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content21() {
@@ -433,11 +570,13 @@ function Content21() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">11, 100, 221</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            11, 100, 221
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content22() {
@@ -445,11 +584,13 @@ function Content22() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">83, 63, 0, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            83, 63, 0, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content23() {
@@ -457,18 +598,29 @@ function Content23() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">2387C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            2387C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row3() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content18 />
@@ -476,32 +628,56 @@ function Row3() {
         </div>
       </div>
       <Cell2 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content20 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content21 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content22 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content23 />
@@ -509,7 +685,7 @@ function Row3() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content24() {
@@ -517,11 +693,13 @@ function Content24() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Dark Blue</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Dark Blue
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content25() {
@@ -533,16 +711,22 @@ function Content25() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell3() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content25 />
     </div>
-  );
+  )
 }
 
 function Content26() {
@@ -550,11 +734,13 @@ function Content26() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#0A52B3</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #0A52B3
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content27() {
@@ -562,11 +748,13 @@ function Content27() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">10, 82, 179</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            10, 82, 179
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content28() {
@@ -574,11 +762,13 @@ function Content28() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">93, 74, 0, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            93, 74, 0, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content29() {
@@ -586,18 +776,29 @@ function Content29() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row4() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content24 />
@@ -605,32 +806,56 @@ function Row4() {
         </div>
       </div>
       <Cell3 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content26 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content27 />
           </div>
         </div>
       </div>
-      <div className="bg-white flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-white flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content28 />
           </div>
         </div>
       </div>
-      <div className="bg-white flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-white flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content29 />
@@ -638,7 +863,7 @@ function Row4() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content30() {
@@ -646,11 +871,13 @@ function Content30() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Light Teal</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Light Teal
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content31() {
@@ -662,16 +889,22 @@ function Content31() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell4() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content31 />
     </div>
-  );
+  )
 }
 
 function Content32() {
@@ -679,11 +912,13 @@ function Content32() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#48EFCF</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #48EFCF
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content33() {
@@ -691,11 +926,13 @@ function Content33() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">72, 239, 207</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            72, 239, 207
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content34() {
@@ -703,11 +940,13 @@ function Content34() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">53, 0, 32, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            53, 0, 32, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content35() {
@@ -715,18 +954,29 @@ function Content35() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">333C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            333C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row5() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content30 />
@@ -734,32 +984,56 @@ function Row5() {
         </div>
       </div>
       <Cell4 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content32 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content33 />
           </div>
         </div>
       </div>
-      <div className="bg-white flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-white flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content34 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content35 />
@@ -767,7 +1041,7 @@ function Row5() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content36() {
@@ -775,11 +1049,13 @@ function Content36() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Teal</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Teal
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content37() {
@@ -791,16 +1067,22 @@ function Content37() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell5() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content37 />
     </div>
-  );
+  )
 }
 
 function Content38() {
@@ -808,11 +1090,13 @@ function Content38() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#02BCB7</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #02BCB7
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content39() {
@@ -820,11 +1104,13 @@ function Content39() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">2, 188, 183</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            2, 188, 183
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content40() {
@@ -832,11 +1118,13 @@ function Content40() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">73, 0, 35, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            73, 0, 35, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content41() {
@@ -844,18 +1132,29 @@ function Content41() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">3262C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            3262C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row6() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content36 />
@@ -863,32 +1162,56 @@ function Row6() {
         </div>
       </div>
       <Cell5 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content38 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content39 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content40 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content41 />
@@ -896,7 +1219,7 @@ function Row6() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content42() {
@@ -904,11 +1227,13 @@ function Content42() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Dark Teal</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Dark Teal
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content43() {
@@ -920,16 +1245,22 @@ function Content43() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell6() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content43 />
     </div>
-  );
+  )
 }
 
 function Content44() {
@@ -937,11 +1268,13 @@ function Content44() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#128D91</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #128D91
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content45() {
@@ -949,11 +1282,13 @@ function Content45() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">18, 141, 145</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            18, 141, 145
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content46() {
@@ -961,11 +1296,13 @@ function Content46() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">82, 27, 43, 3</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            82, 27, 43, 3
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content47() {
@@ -973,18 +1310,29 @@ function Content47() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row7() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content42 />
@@ -992,32 +1340,56 @@ function Row7() {
         </div>
       </div>
       <Cell6 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content44 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content45 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content46 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content47 />
@@ -1025,7 +1397,7 @@ function Row7() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content48() {
@@ -1033,11 +1405,13 @@ function Content48() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Light Poppy</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Light Poppy
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content49() {
@@ -1049,16 +1423,22 @@ function Content49() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell7() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content49 />
     </div>
-  );
+  )
 }
 
 function Content50() {
@@ -1066,11 +1446,13 @@ function Content50() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#FF957D</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #FF957D
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content51() {
@@ -1078,11 +1460,13 @@ function Content51() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">255, 149, 125</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            255, 149, 125
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content52() {
@@ -1090,11 +1474,13 @@ function Content52() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">0, 52, 46, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            0, 52, 46, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content53() {
@@ -1102,18 +1488,29 @@ function Content53() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">2022C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            2022C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row8() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content48 />
@@ -1121,32 +1518,56 @@ function Row8() {
         </div>
       </div>
       <Cell7 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content50 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content51 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content52 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content53 />
@@ -1154,7 +1575,7 @@ function Row8() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content54() {
@@ -1162,11 +1583,13 @@ function Content54() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Poppy</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Poppy
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content55() {
@@ -1178,16 +1601,22 @@ function Content55() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell8() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content55 />
     </div>
-  );
+  )
 }
 
 function Content56() {
@@ -1195,11 +1624,13 @@ function Content56() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#FA744E</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #FA744E
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content57() {
@@ -1207,11 +1638,13 @@ function Content57() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">250, 116, 78</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            250, 116, 78
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content58() {
@@ -1219,11 +1652,13 @@ function Content58() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">0, 69, 71, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            0, 69, 71, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content59() {
@@ -1231,18 +1666,29 @@ function Content59() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">2344C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            2344C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row9() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content54 />
@@ -1250,32 +1696,56 @@ function Row9() {
         </div>
       </div>
       <Cell8 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content56 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content57 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content58 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content59 />
@@ -1283,7 +1753,7 @@ function Row9() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content60() {
@@ -1291,11 +1761,13 @@ function Content60() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Dark Poppy</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Dark Poppy
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content61() {
@@ -1307,16 +1779,22 @@ function Content61() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell9() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content61 />
     </div>
-  );
+  )
 }
 
 function Content62() {
@@ -1324,11 +1802,13 @@ function Content62() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#E55940</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #E55940
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content63() {
@@ -1336,11 +1816,13 @@ function Content63() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">229, 89, 64</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            229, 89, 64
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content64() {
@@ -1348,11 +1830,13 @@ function Content64() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">5, 80, 81, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            5, 80, 81, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content65() {
@@ -1360,18 +1844,29 @@ function Content65() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">1565C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            1565C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row10() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content60 />
@@ -1379,32 +1874,56 @@ function Row10() {
         </div>
       </div>
       <Cell9 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content62 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content63 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content64 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content65 />
@@ -1412,7 +1931,7 @@ function Row10() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content66() {
@@ -1420,11 +1939,13 @@ function Content66() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Light Pink</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Light Pink
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content67() {
@@ -1436,16 +1957,22 @@ function Content67() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell10() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content67 />
     </div>
-  );
+  )
 }
 
 function Content68() {
@@ -1453,11 +1980,13 @@ function Content68() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#F990C6</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #F990C6
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content69() {
@@ -1465,11 +1994,13 @@ function Content69() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">249, 144, 198</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            249, 144, 198
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content70() {
@@ -1477,11 +2008,13 @@ function Content70() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">0, 54, 0, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            0, 54, 0, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content71() {
@@ -1489,18 +2022,29 @@ function Content71() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">217C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            217C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row11() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content66 />
@@ -1508,32 +2052,56 @@ function Row11() {
         </div>
       </div>
       <Cell10 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content68 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content69 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content70 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content71 />
@@ -1541,7 +2109,7 @@ function Row11() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content72() {
@@ -1549,11 +2117,13 @@ function Content72() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Pink</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Pink
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content73() {
@@ -1565,16 +2135,22 @@ function Content73() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell11() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content73 />
     </div>
-  );
+  )
 }
 
 function Content74() {
@@ -1582,11 +2158,13 @@ function Content74() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#F04E98</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #F04E98
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content75() {
@@ -1594,11 +2172,13 @@ function Content75() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">240, 78, 152</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            240, 78, 152
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content76() {
@@ -1606,11 +2186,13 @@ function Content76() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">0, 84, 3, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            0, 84, 3, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content77() {
@@ -1618,18 +2200,29 @@ function Content77() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">2038C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            2038C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row12() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content72 />
@@ -1637,32 +2230,56 @@ function Row12() {
         </div>
       </div>
       <Cell11 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content74 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content75 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content76 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content77 />
@@ -1670,7 +2287,7 @@ function Row12() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content78() {
@@ -1678,11 +2295,13 @@ function Content78() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Dark Pink</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Dark Pink
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content79() {
@@ -1694,16 +2313,22 @@ function Content79() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell12() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content79 />
     </div>
-  );
+  )
 }
 
 function Content80() {
@@ -1711,11 +2336,13 @@ function Content80() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#DD0A73</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #DD0A73
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content81() {
@@ -1723,11 +2350,13 @@ function Content81() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">221, 10, 115</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            221, 10, 115
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content82() {
@@ -1735,11 +2364,13 @@ function Content82() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">8, 100, 24, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            8, 100, 24, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content83() {
@@ -1747,18 +2378,29 @@ function Content83() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row13() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content78 />
@@ -1766,32 +2408,56 @@ function Row13() {
         </div>
       </div>
       <Cell12 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content80 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content81 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content82 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content83 />
@@ -1799,7 +2465,7 @@ function Row13() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content84() {
@@ -1807,11 +2473,13 @@ function Content84() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Light Yellow</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Light Yellow
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content85() {
@@ -1823,16 +2491,22 @@ function Content85() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell13() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content85 />
     </div>
-  );
+  )
 }
 
 function Content86() {
@@ -1840,11 +2514,13 @@ function Content86() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#FFDF56</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #FFDF56
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content87() {
@@ -1852,11 +2528,13 @@ function Content87() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">255, 223, 86</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            255, 223, 86
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content88() {
@@ -1864,11 +2542,13 @@ function Content88() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">1, 9, 78, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            1, 9, 78, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content89() {
@@ -1876,18 +2556,29 @@ function Content89() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row14() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content84 />
@@ -1895,32 +2586,56 @@ function Row14() {
         </div>
       </div>
       <Cell13 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content86 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content87 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content88 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content89 />
@@ -1928,7 +2643,7 @@ function Row14() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content90() {
@@ -1936,11 +2651,13 @@ function Content90() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Yellow</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Yellow
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content91() {
@@ -1952,16 +2669,22 @@ function Content91() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell14() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content91 />
     </div>
-  );
+  )
 }
 
 function Content92() {
@@ -1969,11 +2692,13 @@ function Content92() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#FEC514</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #FEC514
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content93() {
@@ -1981,11 +2706,13 @@ function Content93() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">254, 197, 20</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            254, 197, 20
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content94() {
@@ -1993,11 +2720,13 @@ function Content94() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">0, 23, 98, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            0, 23, 98, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content95() {
@@ -2005,18 +2734,29 @@ function Content95() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">123C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            123C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row15() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content90 />
@@ -2024,32 +2764,56 @@ function Row15() {
         </div>
       </div>
       <Cell14 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content92 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content93 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content94 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content95 />
@@ -2057,7 +2821,7 @@ function Row15() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content96() {
@@ -2065,11 +2829,13 @@ function Content96() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Dark Yellow</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Dark Yellow
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content97() {
@@ -2081,16 +2847,22 @@ function Content97() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell15() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content97 />
     </div>
-  );
+  )
 }
 
 function Content98() {
@@ -2098,11 +2870,13 @@ function Content98() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#FFAD18</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #FFAD18
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content99() {
@@ -2110,11 +2884,13 @@ function Content99() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">255, 173, 24</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            255, 173, 24
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content100() {
@@ -2122,11 +2898,13 @@ function Content100() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">0, 37, 98, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            0, 37, 98, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content101() {
@@ -2134,18 +2912,29 @@ function Content101() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row16() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content96 />
@@ -2153,32 +2942,56 @@ function Row16() {
         </div>
       </div>
       <Cell15 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content98 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content99 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content100 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content101 />
@@ -2186,7 +2999,7 @@ function Row16() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content102() {
@@ -2194,11 +3007,13 @@ function Content102() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Midnight Blue</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Midnight Blue
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content103() {
@@ -2210,16 +3025,22 @@ function Content103() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell16() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content103 />
     </div>
-  );
+  )
 }
 
 function Content104() {
@@ -2227,11 +3048,13 @@ function Content104() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#153385</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #153385
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content105() {
@@ -2239,11 +3062,13 @@ function Content105() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">21, 51, 133</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            21, 51, 133
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content106() {
@@ -2251,11 +3076,13 @@ function Content106() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">100, 92, 17, 4</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            100, 92, 17, 4
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content107() {
@@ -2263,18 +3090,29 @@ function Content107() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">661C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            661C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row17() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content102 />
@@ -2282,32 +3120,56 @@ function Row17() {
         </div>
       </div>
       <Cell16 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content104 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content105 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content106 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content107 />
@@ -2315,7 +3177,7 @@ function Row17() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content108() {
@@ -2323,11 +3185,13 @@ function Content108() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Developer Blue</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Developer Blue
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content109() {
@@ -2339,16 +3203,22 @@ function Content109() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell17() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-center justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content109 />
     </div>
-  );
+  )
 }
 
 function Content110() {
@@ -2356,11 +3226,13 @@ function Content110() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#101C3F</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #101C3F
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content111() {
@@ -2368,11 +3240,13 @@ function Content111() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">16, 28, 63</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            16, 28, 63
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content112() {
@@ -2380,11 +3254,13 @@ function Content112() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">99, 90, 43, 52</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            99, 90, 43, 52
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content113() {
@@ -2392,18 +3268,29 @@ function Content113() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">2768C</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            2768C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row18() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content108 />
@@ -2411,32 +3298,56 @@ function Row18() {
         </div>
       </div>
       <Cell17 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content110 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content111 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content112 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content113 />
@@ -2444,12 +3355,15 @@ function Row18() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Table() {
   return (
-    <div className="bg-[#363636] content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-name="Table">
+    <div
+      className="bg-[#363636] content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full"
+      data-name="Table"
+    >
       <Row />
       <Row1 />
       <Row2 />
@@ -2470,15 +3384,18 @@ function Table() {
       <Row17 />
       <Row18 />
     </div>
-  );
+  )
 }
 
 function Table1() {
   return (
-    <div className="absolute content-stretch flex flex-col items-start left-[calc(25%+96px)] top-[calc(14.29%+52.71px)] w-[608px]" data-name="Table 1">
+    <div
+      className="absolute content-stretch flex flex-col items-start left-[calc(25%+96px)] top-[calc(14.29%+52.71px)] w-[608px]"
+      data-name="Table 1"
+    >
       <Table />
     </div>
-  );
+  )
 }
 
 function Content114() {
@@ -2486,11 +3403,13 @@ function Content114() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">Color name</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            Color name
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content115() {
@@ -2500,7 +3419,7 @@ function Content115() {
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full" />
       </div>
     </div>
-  );
+  )
 }
 
 function Content116() {
@@ -2508,11 +3427,13 @@ function Content116() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">Hex</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            Hex
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content117() {
@@ -2520,11 +3441,13 @@ function Content117() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">RGB</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            RGB
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content118() {
@@ -2532,11 +3455,13 @@ function Content118() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">CMYK</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            CMYK
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content119() {
@@ -2544,53 +3469,73 @@ function Content119() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">Pantone</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[1.3] min-w-px not-italic relative text-[#1c1e23] text-[12px]">
+            Pantone
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row19() {
   return (
     <div className="bg-white relative shrink-0 w-full" data-name=".Row">
       <div className="content-stretch flex items-start overflow-clip relative rounded-[inherit] size-full">
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content114 />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] relative self-stretch shrink-0 w-[40px]" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] relative self-stretch shrink-0 w-[40px]"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content115 />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content116 />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content117 />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content118 />
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
+        <div
+          className="bg-[rgba(255,255,255,0.05)] flex-[1_0_0] min-w-px relative self-stretch"
+          data-name="Cell"
+        >
           <div className="flex flex-col justify-center size-full">
             <div className="content-stretch flex flex-col items-start justify-center relative size-full">
               <Content119 />
@@ -2598,9 +3543,12 @@ function Row19() {
           </div>
         </div>
       </div>
-      <div aria-hidden className="absolute border-[#5b5b5b] border-b border-solid inset-0 pointer-events-none" />
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-b border-solid inset-0 pointer-events-none"
+      />
     </div>
-  );
+  )
 }
 
 function Content120() {
@@ -2608,11 +3556,13 @@ function Content120() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">White</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            White
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content121() {
@@ -2621,21 +3571,30 @@ function Content121() {
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
           <div className="bg-white relative rounded-[2px] shrink-0 size-[18px]">
-            <div aria-hidden className="absolute border border-[#d4dae5] border-solid inset-0 pointer-events-none rounded-[2px]" />
+            <div
+              aria-hidden
+              className="absolute border border-[#d4dae5] border-solid inset-0 pointer-events-none rounded-[2px]"
+            />
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell18() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content121 />
     </div>
-  );
+  )
 }
 
 function Content122() {
@@ -2643,11 +3602,13 @@ function Content122() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#FFFFFF</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #FFFFFF
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content123() {
@@ -2655,11 +3616,13 @@ function Content123() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">255, 255, 255</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            255, 255, 255
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content124() {
@@ -2667,11 +3630,13 @@ function Content124() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">0, 0, 0, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            0, 0, 0, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content125() {
@@ -2679,18 +3644,29 @@ function Content125() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row20() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content120 />
@@ -2698,32 +3674,56 @@ function Row20() {
         </div>
       </div>
       <Cell18 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content122 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content123 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content124 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content125 />
@@ -2731,7 +3731,7 @@ function Row20() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content126() {
@@ -2739,11 +3739,13 @@ function Content126() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Light Gray</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Light Gray
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content127() {
@@ -2755,16 +3757,22 @@ function Content127() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell19() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content127 />
     </div>
-  );
+  )
 }
 
 function Content128() {
@@ -2772,11 +3780,13 @@ function Content128() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#F5F7FA</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #F5F7FA
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content129() {
@@ -2784,11 +3794,13 @@ function Content129() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">245, 247, 250</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            245, 247, 250
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content130() {
@@ -2796,11 +3808,13 @@ function Content130() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">2, 1, 0, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            2, 1, 0, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content131() {
@@ -2808,27 +3822,44 @@ function Content131() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] not-italic relative shrink-0 text-[#343741] text-[12px] whitespace-nowrap">-</p>
+          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] not-italic relative shrink-0 text-[#343741] text-[12px] whitespace-nowrap">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell20() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-w-px relative self-stretch" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-w-px relative self-stretch"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content131 />
     </div>
-  );
+  )
 }
 
 function Row21() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content126 />
@@ -2836,24 +3867,42 @@ function Row21() {
         </div>
       </div>
       <Cell19 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content128 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content129 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content130 />
@@ -2862,7 +3911,7 @@ function Row21() {
       </div>
       <Cell20 />
     </div>
-  );
+  )
 }
 
 function Content132() {
@@ -2870,11 +3919,13 @@ function Content132() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Medium Gray</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Medium Gray
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content133() {
@@ -2886,16 +3937,22 @@ function Content133() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell21() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content133 />
     </div>
-  );
+  )
 }
 
 function Content134() {
@@ -2903,11 +3960,13 @@ function Content134() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#DCE2EA</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #DCE2EA
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content135() {
@@ -2915,11 +3974,13 @@ function Content135() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">220, 226, 234</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            220, 226, 234
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content136() {
@@ -2927,11 +3988,13 @@ function Content136() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">12, 7, 4, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            12, 7, 4, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content137() {
@@ -2939,18 +4002,29 @@ function Content137() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row22() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content132 />
@@ -2958,32 +4032,56 @@ function Row22() {
         </div>
       </div>
       <Cell21 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content134 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content135 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content136 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content137 />
@@ -2991,7 +4089,7 @@ function Row22() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content138() {
@@ -2999,11 +4097,13 @@ function Content138() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Dark Gray</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Dark Gray
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content139() {
@@ -3015,16 +4115,22 @@ function Content139() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell22() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content139 />
     </div>
-  );
+  )
 }
 
 function Content140() {
@@ -3032,11 +4138,13 @@ function Content140() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#ABB4C4</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #ABB4C4
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content141() {
@@ -3044,11 +4152,13 @@ function Content141() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">171, 180, 196</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            171, 180, 196
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content142() {
@@ -3056,11 +4166,13 @@ function Content142() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">33, 23, 14, 0</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            33, 23, 14, 0
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content143() {
@@ -3068,18 +4180,29 @@ function Content143() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row23() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content138 />
@@ -3087,32 +4210,56 @@ function Row23() {
         </div>
       </div>
       <Cell22 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content140 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content141 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content142 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content143 />
@@ -3120,7 +4267,7 @@ function Row23() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content144() {
@@ -3128,11 +4275,13 @@ function Content144() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Ink</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Ink
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content145() {
@@ -3144,16 +4293,22 @@ function Content145() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell23() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content145 />
     </div>
-  );
+  )
 }
 
 function Content146() {
@@ -3161,11 +4316,13 @@ function Content146() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#343741</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #343741
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content147() {
@@ -3173,11 +4330,13 @@ function Content147() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">52, 55, 65</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            52, 55, 65
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content148() {
@@ -3185,11 +4344,13 @@ function Content148() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">76, 67, 53, 49</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            76, 67, 53, 49
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content149() {
@@ -3197,27 +4358,44 @@ function Content149() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] not-italic relative shrink-0 text-[#343741] text-[12px] whitespace-nowrap">7564 C</p>
+          <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] not-italic relative shrink-0 text-[#343741] text-[12px] whitespace-nowrap">
+            7564 C
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell24() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-w-px relative self-stretch" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-w-px relative self-stretch"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content149 />
     </div>
-  );
+  )
 }
 
 function Row24() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content144 />
@@ -3225,24 +4403,42 @@ function Row24() {
         </div>
       </div>
       <Cell23 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content146 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content147 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content148 />
@@ -3251,7 +4447,7 @@ function Row24() {
       </div>
       <Cell24 />
     </div>
-  );
+  )
 }
 
 function Content150() {
@@ -3259,11 +4455,13 @@ function Content150() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">Dark Ink</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            Dark Ink
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content151() {
@@ -3275,16 +4473,22 @@ function Content151() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Cell25() {
   return (
-    <div className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0" data-name="Cell">
-      <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-[rgba(255,255,255,0)] content-stretch flex flex-col items-start justify-center relative self-stretch shrink-0"
+      data-name="Cell"
+    >
+      <div
+        aria-hidden
+        className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+      />
       <Content151 />
     </div>
-  );
+  )
 }
 
 function Content152() {
@@ -3292,11 +4496,13 @@ function Content152() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">#1C1E23</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            #1C1E23
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content153() {
@@ -3304,11 +4510,13 @@ function Content153() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">28, 30, 35</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            28, 30, 35
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content154() {
@@ -3316,11 +4524,13 @@ function Content154() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">76, 69, 61, 73</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            76, 69, 61, 73
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Content155() {
@@ -3328,18 +4538,29 @@ function Content155() {
     <div className="relative shrink-0 w-full" data-name="Content">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex items-start px-[12px] py-[10px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">-</p>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[1.3] min-w-px not-italic relative text-[#343741] text-[12px]">
+            -
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Row25() {
   return (
-    <div className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-name=".Row">
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+    <div
+      className="bg-white content-stretch flex items-start overflow-clip relative shrink-0 w-full"
+      data-name=".Row"
+    >
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content150 />
@@ -3347,32 +4568,56 @@ function Row25() {
         </div>
       </div>
       <Cell25 />
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content152 />
           </div>
         </div>
       </div>
-      <div className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="bg-[rgba(255,255,255,0)] flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content153 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content154 />
           </div>
         </div>
       </div>
-      <div className="flex-[1_0_0] min-w-px relative self-stretch" data-name="Cell">
-        <div aria-hidden className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none" />
+      <div
+        className="flex-[1_0_0] min-w-px relative self-stretch"
+        data-name="Cell"
+      >
+        <div
+          aria-hidden
+          className="absolute border-[#5b5b5b] border-solid border-t inset-0 pointer-events-none"
+        />
         <div className="flex flex-col justify-center size-full">
           <div className="content-stretch flex flex-col items-start justify-center relative size-full">
             <Content155 />
@@ -3380,12 +4625,15 @@ function Row25() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Table3() {
   return (
-    <div className="bg-[#363636] content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-name="Table">
+    <div
+      className="bg-[#363636] content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full"
+      data-name="Table"
+    >
       <Row19 />
       <Row20 />
       <Row21 />
@@ -3394,21 +4642,31 @@ function Table3() {
       <Row24 />
       <Row25 />
     </div>
-  );
+  )
 }
 
 function Table2() {
   return (
-    <div className="absolute content-stretch flex flex-col items-start left-[calc(58.33%+109px)] top-[calc(14.29%+52.71px)] w-[608px]" data-name="Table 2">
+    <div
+      className="absolute content-stretch flex flex-col items-start left-[calc(58.33%+109px)] top-[calc(14.29%+52.71px)] w-[608px]"
+      data-name="Table 2"
+    >
       <Table3 />
     </div>
-  );
+  )
 }
 
 function Group() {
   return (
     <div className="absolute inset-[94.91%_97%_2.22%_1.35%]" data-name="Group">
-      <svg className="absolute block inset-0 size-full" fill="none" height="31.0013" preserveAspectRatio="none" viewBox="0 0 31.6592 31.0013" width="31.6592">
+      <svg
+        className="absolute block inset-0 size-full"
+        fill="none"
+        height="31.0013"
+        preserveAspectRatio="none"
+        viewBox="0 0 31.6592 31.0013"
+        width="31.6592"
+      >
         <g id="Group">
           <path d={svgPaths.p115be00} fill="white" id="Vector" />
           <path d={svgPaths.p13800a00} fill="#FEC514" id="Vector_2" />
@@ -3420,13 +4678,23 @@ function Group() {
         </g>
       </svg>
     </div>
-  );
+  )
 }
 
 function Group1() {
   return (
-    <div className="absolute inset-[95.75%_93.85%_2.93%_3.25%]" data-name="Group">
-      <svg className="absolute block inset-0 size-full" fill="none" height="14.2365" preserveAspectRatio="none" viewBox="0 0 55.633 14.2365" width="55.633">
+    <div
+      className="absolute inset-[95.75%_93.85%_2.93%_3.25%]"
+      data-name="Group"
+    >
+      <svg
+        className="absolute block inset-0 size-full"
+        fill="none"
+        height="14.2365"
+        preserveAspectRatio="none"
+        viewBox="0 0 55.633 14.2365"
+        width="55.633"
+      >
         <g id="Group">
           <path d={svgPaths.p3c3a4c00} fill="#1C1E23" id="Vector" />
           <path d={svgPaths.p17ac9200} fill="#1C1E23" id="Vector_2" />
@@ -3438,16 +4706,19 @@ function Group1() {
         </g>
       </svg>
     </div>
-  );
+  )
 }
 
 function LogoElasticHorizontalColor() {
   return (
-    <div className="absolute contents inset-[94.91%_93.85%_2.22%_1.35%]" data-name="logo-elastic-horizontal-color">
+    <div
+      className="absolute contents inset-[94.91%_93.85%_2.22%_1.35%]"
+      data-name="logo-elastic-horizontal-color"
+    >
       <Group />
       <Group1 />
     </div>
-  );
+  )
 }
 
 export default function Color() {
@@ -3455,39 +4726,88 @@ export default function Color() {
     <div className="bg-white relative size-full" data-name="color - 4">
       <Table1 />
       <Table2 />
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Inter:Bold',sans-serif] font-bold leading-[14.273px] left-[calc(25%+96px)] not-italic text-[20px] text-black top-[calc(14.29%+5.71px)] whitespace-nowrap">Colors</p>
-      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Inter:Bold',sans-serif] font-bold leading-[14.273px] left-[calc(58.33%+109px)] not-italic text-[20px] text-black top-[calc(14.29%+5.71px)] whitespace-nowrap">Grayscale</p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Inter:Bold',sans-serif] font-bold leading-[14.273px] left-[calc(25%+96px)] not-italic text-[20px] text-black top-[calc(14.29%+5.71px)] whitespace-nowrap">
+        Colors
+      </p>
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Inter:Bold',sans-serif] font-bold leading-[14.273px] left-[calc(58.33%+109px)] not-italic text-[20px] text-black top-[calc(14.29%+5.71px)] whitespace-nowrap">
+        Grayscale
+      </p>
       <div className="-translate-y-full [word-break:break-word] absolute flex flex-col font-['Helvetica_Neue:Bold',sans-serif] h-[17px] justify-end leading-[0] left-[calc(8.33%-130px)] not-italic text-[#111] text-[20px] top-[calc(32.14%+33.86px)] w-[285px]">
         <p className="leading-none">All color values</p>
       </div>
-      <p className="[word-break:break-word] absolute font-['Inter:Light',sans-serif] font-light h-[158px] leading-[1.4] left-[calc(12.5%-210px)] not-italic text-[16px] text-black top-[calc(46.43%-100.43px)] w-[443px]">This is a detailed reference of every single color used in the Elastic brand, along with all the technical values you might need.</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+69.46px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+69.46px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+69.46px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+69.46px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">​</p>
-      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+142px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">​</p>
+      <p className="[word-break:break-word] absolute font-['Inter:Light',sans-serif] font-light h-[158px] leading-[1.4] left-[calc(12.5%-210px)] not-italic text-[16px] text-black top-[calc(46.43%-100.43px)] w-[443px]">
+        This is a detailed reference of every single color used in the Elastic
+        brand, along with all the technical values you might need.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Helvetica_Neue:Bold',sans-serif] leading-none left-[calc(50%+71px)] not-italic text-[#656565] text-[16px] top-[32px] whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+69.46px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+69.46px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+69.46px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+69.46px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">
+        ​
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular',sans-serif] font-normal leading-[normal] left-[calc(16.67%+142px)] not-italic text-[72.4px] text-black top-0 whitespace-nowrap">
+        ​
+      </p>
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Regular',sans-serif] font-normal h-[18px] justify-center leading-[0] left-[calc(33.33%+20px)] not-italic text-[#656565] text-[16px] top-[39px] w-[293px]">
         <p className="leading-none">Brand Refresh Guidelines</p>
       </div>
-      <p className="[word-break:break-word] absolute font-['Inter:Extra_Bold',sans-serif] font-extrabold h-[55px] leading-none left-[calc(12.5%-210px)] not-italic text-[#0b63dd] text-[20px] top-[calc(3.57%-8.57px)] w-[443px]">Colors</p>
+      <p className="[word-break:break-word] absolute font-['Inter:Extra_Bold',sans-serif] font-extrabold h-[55px] leading-none left-[calc(12.5%-210px)] not-italic text-[#0b63dd] text-[20px] top-[calc(3.57%-8.57px)] w-[443px]">
+        Colors
+      </p>
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Regular',sans-serif] font-normal h-[18px] justify-center leading-[0] left-[calc(66.67%+10px)] not-italic text-[#656565] text-[16px] top-[39px] w-[127px]">
         <p className="whitespace-pre-wrap">
           <span className="leading-none">{`2024  `}</span>
-          <span className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-none not-italic tracking-[-1.92px]">----</span>
+          <span className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-none not-italic tracking-[-1.92px]">
+            ----
+          </span>
           <span className="leading-none">{`  25`}</span>
         </p>
       </div>
@@ -3496,5 +4816,5 @@ export default function Color() {
       </div>
       <LogoElasticHorizontalColor />
     </div>
-  );
+  )
 }

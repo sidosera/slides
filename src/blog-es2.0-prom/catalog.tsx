@@ -6,6 +6,7 @@ import { Figure07CompatTest } from "./FigCompatTest-00"
 import { Figure05BinaryJoin } from "./FigJoin-00"
 import { Figure06Selector } from "./FigSelector-00"
 import { Figure08Methodology } from "./FigCompliance-00"
+import { Figure08bFunctionalSupport } from "./FigFunctionalSupport-00"
 import { Figure09Histograms } from "./FigHistograms-00"
 import { Figure10Offset } from "./FigOffset-00"
 import { Figure11Grid } from "./FigGrid-00"
@@ -34,6 +35,7 @@ export const figures: ReactNode[] = [
   <Figure05BinaryJoin />,
   <Figure06Selector />,
   <Figure08Methodology />,
+  <Figure08bFunctionalSupport />,
   <Figure09Histograms />,
   <Figure10Offset />,
   <Figure11Grid />,

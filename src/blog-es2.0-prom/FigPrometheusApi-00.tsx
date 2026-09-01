@@ -172,7 +172,13 @@ function TransformPanel({
       />
       {items.map((item, i) => (
         <g key={item}>
-          <circle cx={x + 16} cy={y + 24 + i * 22} r={3.2} fill={C.teal} opacity={0.68} />
+          <circle
+            cx={x + 16}
+            cy={y + 24 + i * 22}
+            r={3.2}
+            fill={C.teal}
+            opacity={0.68}
+          />
           <text
             x={x + 28}
             y={y + 24 + i * 22}
@@ -201,7 +207,9 @@ export function Figure14PrometheusApis() {
       width={W}
       height={540}
     >
-      <GroupTitle x={52} y={70}>PROMETHEUS</GroupTitle>
+      <GroupTitle x={52} y={70}>
+        PROMETHEUS
+      </GroupTitle>
       <rect
         x={52}
         y={92}
@@ -245,7 +253,9 @@ export function Figure14PrometheusApis() {
         stroke={softStroke}
         strokeWidth={0.85}
       />
-      <GroupTitle x={270} y={82}>ELASTICSEARCH SERVER</GroupTitle>
+      <GroupTitle x={270} y={82}>
+        ELASTICSEARCH SERVER
+      </GroupTitle>
 
       <text
         x={218}
@@ -270,7 +280,14 @@ export function Figure14PrometheusApis() {
         fill={apiFill}
         color={C.darkTeal}
       />
-      <Arrow x1={202} y1={laneIngestY} x2={278} y2={laneIngestY} color={C.teal} width={1.35} />
+      <Arrow
+        x1={202}
+        y1={laneIngestY}
+        x2={278}
+        y2={laneIngestY}
+        color={C.teal}
+        width={1.35}
+      />
 
       <TransformPanel
         x={454}
@@ -282,7 +299,13 @@ export function Figure14PrometheusApis() {
           "dynamic template",
         ]}
       />
-      <Arrow x1={420} y1={laneIngestY} x2={454} y2={laneIngestY} color={C.darkGray} />
+      <Arrow
+        x1={420}
+        y1={laneIngestY}
+        x2={454}
+        y2={laneIngestY}
+        color={C.darkGray}
+      />
 
       <Node
         x={688}
@@ -296,7 +319,14 @@ export function Figure14PrometheusApis() {
         color={C.darkTeal}
         mono
       />
-      <Arrow x1={642} y1={laneIngestY} x2={688} y2={laneIngestY} color={C.teal} width={1.35} />
+      <Arrow
+        x1={642}
+        y1={laneIngestY}
+        x2={688}
+        y2={laneIngestY}
+        color={C.teal}
+        width={1.35}
+      />
 
       <Node
         x={278}
@@ -309,7 +339,14 @@ export function Figure14PrometheusApis() {
         fill={apiFill}
         color={C.darkBlue}
       />
-      <Arrow x1={202} y1={laneQueryY} x2={278} y2={laneQueryY} color={C.blue} width={1.35} />
+      <Arrow
+        x1={202}
+        y1={laneQueryY}
+        x2={278}
+        y2={laneQueryY}
+        color={C.blue}
+        width={1.35}
+      />
 
       <Node
         x={454}
@@ -323,7 +360,13 @@ export function Figure14PrometheusApis() {
         color={C.ink}
         mono
       />
-      <Arrow x1={420} y1={laneQueryY} x2={454} y2={laneQueryY} color={C.darkGray} />
+      <Arrow
+        x1={420}
+        y1={laneQueryY}
+        x2={454}
+        y2={laneQueryY}
+        color={C.darkGray}
+      />
 
       <Node
         x={638}
@@ -336,7 +379,14 @@ export function Figure14PrometheusApis() {
         fill={TINT.physical}
         color={C.darkBlue}
       />
-      <Arrow x1={596} y1={laneQueryY} x2={638} y2={laneQueryY} color={C.blue} width={1.35} />
+      <Arrow
+        x1={596}
+        y1={laneQueryY}
+        x2={638}
+        y2={laneQueryY}
+        color={C.blue}
+        width={1.35}
+      />
 
       <Node
         x={826}
@@ -350,7 +400,14 @@ export function Figure14PrometheusApis() {
         color={C.mutedInk}
         mono
       />
-      <Arrow x1={788} y1={laneQueryY} x2={826} y2={laneQueryY} color={C.blue} width={1.35} />
+      <Arrow
+        x1={788}
+        y1={laneQueryY}
+        x2={826}
+        y2={laneQueryY}
+        color={C.blue}
+        width={1.35}
+      />
 
       <line
         x1={270}
@@ -360,10 +417,24 @@ export function Figure14PrometheusApis() {
         stroke={softStroke}
         strokeWidth={1}
       />
-      <text x={270} y={126} fontSize={11} fontWeight={760} letterSpacing={1} fill={C.faintInk}>
+      <text
+        x={270}
+        y={126}
+        fontSize={11}
+        fontWeight={760}
+        letterSpacing={1}
+        fill={C.faintInk}
+      >
         INGEST
       </text>
-      <text x={270} y={286} fontSize={11} fontWeight={760} letterSpacing={1} fill={C.faintInk}>
+      <text
+        x={270}
+        y={286}
+        fontSize={11}
+        fontWeight={760}
+        letterSpacing={1}
+        fill={C.faintInk}
+      >
         QUERY
       </text>
     </Figure>
